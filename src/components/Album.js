@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Album = () => (
-	<section classname="album">
+	<section className="album">
 		Check out my Album
 	</section>
 	);
