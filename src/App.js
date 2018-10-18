@@ -12,18 +12,17 @@ class App extends Component {
        <header>
           <nav>
             <Link to='/'>Landing</Link>
-            <Link to='/library'>Library</Link>
-              </nav>
-        <h1>Bloc Jams</h1>
+            <Link to='/library'>Library</Link>                                                  
+            </nav>        
+            <h1>Bloc Jams</h1>
        </header>
        <main>
-       <Route exact path="/" component={Landing} />
-       <Route path="/library" component={Library} />
-       <Route path="/album" component={Album} />
-       </main>
-      </div>
-    );
-  }
-}
-
-export default App;
+       <Route exact path="/" component={Landing} />       
+       <Route path="/library" component={Library} />       
+       <Route path="/album/:slug" component={Album} />       
+       </main>      
+       </div>    
+       );  
+     }
+     }
+       export default App;
