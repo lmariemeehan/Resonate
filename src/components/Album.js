@@ -109,9 +109,7 @@ class Album extends Component {
 		          }
 		       </tbody>
 
-		       <div>IndexEnabled: {this.state.hoveredIndex ? "true" : "false"}</div>
-        	   <div>Hovered: {this.state.isHovered ? "true" : "false"}</div>
-	         
+		   	         
 	         </table>
        </section>
      );
