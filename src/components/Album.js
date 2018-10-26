@@ -12,7 +12,9 @@ class Album extends Component {
      this.state = {
        album: album,
        currentSong: album.songs[0],
-       isPlaying: false
+       isPlaying: false,
+       isHovered: false,
+       hoveredIndex: false
      };
 
      this.audioElement = document.createElement('audio');
@@ -44,6 +46,34 @@ class Album extends Component {
    		this.play();
    	}
    }
+
+   hover(index){
+    this.setState({isHovered: true});
+  }
+
+  unHover(song){
+    this.setState({isHovered: false});
+  }
+
+  songNumber(index) {
+  	this.setState({hoveredIndex: true});
+  }
+
+  handleHoverButtons(song, index) {
+  	if(this.state.isHovered && !this.state.isPlaying) {  
+  		 return <span className="ion-play"></span>;
+  		 return this.hoveredIndex === false;
+	  	} else if (this.state.isHovered && this.state.isPlaying) {
+	  	 return <span className="ion-pause"></span>;
+	  	 return this.hoveredIndex === false;
+	  	} else {
+	  	if (this.state.currentSong === !this.state.isPlaying) {
+	  		return <span className="ion-play"></span>;
+	  		return this.hoveredIndex === false;
+	  	  }
+	  	}
+	  }
+  
  
    render() {
      return (
@@ -68,14 +98,19 @@ class Album extends Component {
 	           <tbody>
 	             {
 	             	this.state.album.songs.map( (song, index) => 
-	             	<tr className="song" key={index} onClick= {() => this.handleSongClick(song)}> 
-	             	<td className="song-number"> {index + 1} </td>
+	             	<tr className="song" key={index} onClick= {() => this.handleSongClick(song)}
+	             									 onMouseEnter= {() => this.handleHoverButtons(song, index)} 
+	             									 onMouseLeave= {() => this.unHover(song)}> 
+	             	<td className="song-number"> {index + 1} </td> 
 	             	<td className="song-title"> {song.title} </td>
 	             	<td className="song-duration"> {song.duration} seconds </td>
 	             	</tr>		
 		            )
 		          }
 		       </tbody>
+
+		       <div>IndexEnabled: {this.state.hoveredIndex ? "true" : "false"}</div>
+        	   <div>Hovered: {this.state.isHovered ? "true" : "false"}</div>
 	         
 	         </table>
        </section>
