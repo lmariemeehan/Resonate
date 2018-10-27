@@ -57,7 +57,6 @@ class Album extends Component {
  
    render() {
 
-   	this.state.album.songs.map( (song, index) =>
    		if (this.state.currentSong === this.state.isHovered) {
            return <span className="ion-play"></span>;
             } else if (this.state.currentSong === this.state.isPlaying) {
@@ -67,7 +66,6 @@ class Album extends Component {
             } else {
               return <span key={index}></span>;
             }
-    )
 
      return (
        <section className="album">
