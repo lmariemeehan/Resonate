@@ -56,6 +56,19 @@ class Album extends Component {
   }
  
    render() {
+
+   	this.state.album.songs.map( (song, index) =>
+   		if (this.state.currentSong === this.state.isHovered) {
+           return <span className="ion-play"></span>;
+            } else if (this.state.currentSong === this.state.isPlaying) {
+              return <span className="ion-pause"></span>;
+            } else if (!this.state.currentSong && this.state.isHovered) {
+              return <span className="ion-play"></span>;
+            } else {
+              return <span key={index}></span>;
+            }
+    )
+
      return (
        <section className="album">
            <section id="album-info">
@@ -68,8 +81,7 @@ class Album extends Component {
        	  </section>
 
 	       <table id="song-list">
-	             <col id="song-number-column" />
-
+	           <col id="song-number-column" />
 	        	<colgroup>
 	             <col id="song-title-column" />
 	             <col id="song-duration-column" />
@@ -78,23 +90,11 @@ class Album extends Component {
 
 	        <tbody>	   
 	           {this.state.album.songs.map( (song, index) => 
-	           	<div>
-		           if (this.state.currentSong === isHovered) {
-	                  <span className="ion-play"></span>
-	                } else if (this.state.currentSong === this.state.isPlaying) {
-	                  <span className="ion-pause"></span>
-	                } else if (!this.state.currentSong && isHovered) {
-	                  <span className="ion-play"></span>
-	                } else {
-	                  <span key={index}></span>
-	                }  
-	             
 		            <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}> 
 	             	<td className="song-number"> {index + 1} </td> 
 	             	<td className="song-title"> {song.title} </td>
 	             	<td className="song-duration"> {song.duration} seconds </td>
 	             	</tr>	
-	            </div> 
 	          )}	
 		     </tbody>	
 
