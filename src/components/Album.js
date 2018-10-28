@@ -52,24 +52,24 @@ class Album extends Component {
   }
 
   onMouseLeave(){
-    this.setState({isHovered: false});
+    this.setState({isHovered: null});
   }
-  }
- 
+
    render() {
 
-   	const isHovered = this.state.isHovered;
-   	let button;
-
-   	  	if (this.state.currentSong === this.state.isHovered) {
-           	  button= <td className="ion-play"></td>;
+   	  handleHoverButton() {
+  	  	const isHovered = this.state.isHovered;
+   		let button;
+   	  	if (!this.state.isPlaying === this.state.currentSong) {
+           	  button= <span className="ion-play"></span>;
             } else if (this.state.currentSong === this.state.isPlaying) {
-              button= <td className="ion-pause"></td>;
-            } else if (!this.state.currentSong && this.state.isHovered) {
-              button= <td className="ion-play"></td>;
+              button= <span className="ion-pause"></span>;
+            } else if (!this.state.isPlaying && this.state.isHovered) {
+              button= <span className="ion-play"></span>;
             } else {
-              button= <td></td>;
+              button= <span></span>;
             }
+}
 
      return (
        <section className="album">
@@ -93,7 +93,7 @@ class Album extends Component {
 	        <tbody>	   
 	           {this.state.album.songs.map( (song, index) => 
 		            <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}> 
-	             	<td className="song-number"> {index + 1} </td> 
+	             	<td className="song-number"> {index + 1} {handleHoverButton} </td> 
 	             	<td className="song-title"> {song.title} </td>
 	             	<td className="song-duration"> {song.duration} seconds </td>
 	             	</tr>	
