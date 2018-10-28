@@ -54,17 +54,21 @@ class Album extends Component {
   onMouseLeave(){
     this.setState({isHovered: false});
   }
+  }
  
    render() {
 
-   		if (this.state.currentSong === this.state.isHovered) {
-           return <span className="ion-play"></span>;
+   	const isHovered = this.state.isHovered;
+   	let button;
+
+   	  	if (this.state.currentSong === this.state.isHovered) {
+           	  button= <td className="ion-play"></td>;
             } else if (this.state.currentSong === this.state.isPlaying) {
-              return <span className="ion-pause"></span>;
+              button= <td className="ion-pause"></td>;
             } else if (!this.state.currentSong && this.state.isHovered) {
-              return <span className="ion-play"></span>;
+              button= <td className="ion-play"></td>;
             } else {
-              return <span key={index}></span>;
+              button= <td></td>;
             }
 
      return (
