@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import albumData from './../data/albums';
+import { Jumbotron, Button } from 'react-bootstrap';
+import './Library.css';
 
  class Library extends Component { 
  	constructor(props) {
@@ -11,17 +13,29 @@ import albumData from './../data/albums';
    render() {
     return ( 
       <section className='library'>
+      <Jumbotron>
+        <h1>Albums</h1>
+        <p>
+          Enjoy all the music Bloc Jams has to offer.
+        </p>
+        <p>
+        </p>
+      </Jumbotron>
+
+      <div className='albumLinks'>
         {
-          this.state.albums.map( (album, index) => 
-            <Link to={`/album/${album.slug}`} key={index}>
+          this.state.albums.map( (album, index) =>  
+              <Link to={`/album/${album.slug}`} key={index}>
                <img src={album.albumCover} alt={album.title} />
-               <div>{album.title}</div>
+               <div bsStyle="default">{album.title}</div>
                <div>{album.artist}</div>
                <div>{album.songs.length} songs</div>
-            </Link>
+                </Link>
           )
         }
+        </div>
       </section>
+      
      );
    }
  }
