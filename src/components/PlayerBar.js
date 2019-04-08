@@ -7,19 +7,20 @@ class PlayerBar extends Component {
 		return (
 			<Grid>
   			<Row className="show-grid" className="player-bar">
-				
+
 				<Col md={4}>
 				<section id="time-control">
 					<div className="current-time">{this.props.formatTime( this.props.currentTime )}</div>
-					<input 
-						type="range" 
-						className="seek-bar" 
+					<input
+						type="range"
+						className="seek-bar"
 						value= {(this.props.currentTime / this.props.duration) || 0}
 						max="1"
 						min="0"
 						step="0.01"
-						onChange={this.props.handleTimeChange}/>
-					<div className="total-time">{this.props.duration}</div>
+						onChange={this.props.handleTimeChange}
+					/>
+					<div className="total-time">{this.props.formatTime(this.props.duration)}</div>
 				</section>
 				</Col>
 
@@ -36,15 +37,15 @@ class PlayerBar extends Component {
 					</button>
 				</section>
 				</Col>
-		
+
 				<Col md={4}>
 				<section id="volume-control">
 					<div className="icon ion-volume-low"></div>
-					<input 
-						   type="range" 
-						   className="seek-bar" 
+					<input
+						   type="range"
+						   className="seek-bar"
 						   volume= {this.props.volume}
-						   max="1" 
+						   max="1"
 						   min="0"
 						   step="0.01"
 						   onChange={this.props.handleVolumeChange}

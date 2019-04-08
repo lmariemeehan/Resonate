@@ -4,14 +4,14 @@ import albumData from './../data/albums';
 import { Jumbotron, Button } from 'react-bootstrap';
 import './Library.css';
 
- class Library extends Component { 
+ class Library extends Component {
  	constructor(props) {
      super(props);
      this.state = { albums: albumData };
    }
- 
+
    render() {
-    return ( 
+    return (
       <section className='library'>
       <Jumbotron>
         <h1>Albums</h1>
@@ -24,7 +24,7 @@ import './Library.css';
 
       <div className='albumLinks'>
         {
-          this.state.albums.map( (album, index) =>  
+          this.state.albums.map( (album, index) =>
               <Link to={`/album/${album.slug}`} key={index}>
                <img src={album.albumCover} alt={album.title} />
                <div bsStyle="default">{album.title}</div>
@@ -35,7 +35,7 @@ import './Library.css';
         }
         </div>
       </section>
-      
+
      );
    }
  }
