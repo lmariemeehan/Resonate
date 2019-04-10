@@ -9,9 +9,10 @@ const Landing = () => (
        <h1 className="hero-title"><a href="/library">Turn the music up!</a></h1>
     </div>
 
-    <section className="container">
-      <div className="row">
+    <section className="sellingpoints-container">
+      <div className="row align-items-end">
       <div className="col-md">
+      <span className="icon ion-music-note"></span>
         <h2 className="point-title">Choose your music</h2>
         <p className="point-description">The world is full of music; why should you have to listen to music that someone else chose?</p>
       </div>

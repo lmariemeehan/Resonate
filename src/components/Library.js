@@ -13,15 +13,9 @@ import './Library.css';
    render() {
     return (
       <section className='library'>
-      <Jumbotron>
-        <h1>Albums</h1>
-        <p>
-          Enjoy all the music Bloc Jams has to offer.
-        </p>
-        <p>
-        </p>
-      </Jumbotron>
 
+      <h1>Albums</h1>
+      
       <div className='albumLinks'>
         {
           this.state.albums.map( (album, index) =>

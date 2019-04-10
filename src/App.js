@@ -15,7 +15,7 @@ class App extends Component {
         <li class="navlibrary"> <a href="/library">Library</a></li>
       </ul>
       </header>
-      
+
        <main>
          <Route exact path="/" component={Landing} />
          <Route path="/library" component={Library} />
@@ -26,6 +26,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
