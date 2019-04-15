@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
       <header>
       <ul class="topnav">
-        <li class="navbrand"> <a href="/">Bloc Jams</a></li>
+        <li class="navbrand"> <a href="/">Resonate</a></li>
         <li class="navlibrary"> <a href="/library">Library</a></li>
       </ul>
       </header>
