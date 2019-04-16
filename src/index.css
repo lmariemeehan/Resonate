@@ -133,37 +133,28 @@ ul.topnav li a:hover {
 
 .album {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  width: 100%;
+  flex-direction: row;
+
 }
 
-.album-image {
+.album img {
+  padding: 40px 100px;
+}
+
+.album-info {
   padding: 40px;
-  height: 750px;
-  float: left;
 }
 
-.album .album-info {
-  padding-top: 40px;
-  padding-right: 80px;
+.song-controls {
+  display: flex;
+  flex-direction: column;
 }
 
-.album .song-list {
-  align-self: center;
-  padding: 15px;
-  width: 35%;
-}
-
-tr {
-  border-bottom: 1px solid #ddd;
-  width: 200px;
-  height: 15px;
+.song-list {
+  align-self:center;
+  padding-bottom: 55px;
 }
 
 .playerbar {
-  display: flex;
   align-self: stretch;
-  padding-bottom: 80px;
-   margin: auto;
 }
