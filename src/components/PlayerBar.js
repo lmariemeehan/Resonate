@@ -30,7 +30,7 @@ class PlayerBar extends Component {
 						<ion-icon name="rewind"></ion-icon>
 					</button>
 					<button id="play-pause" onClick={this.props.handleSongClick}>
-						{this.props.isPlaying ? <ion-icon name="pause"></ion-icon> : <ion-icon name="play"></ion-icon>}
+						<i className={ this.props.isPlaying ? "fas fa-pause" : "fas fa-play"}></i>
 					</button>
 					<button id="next" onClick={this.props.handleNextClick}>
 						<ion-icon name="fastforward"></ion-icon>

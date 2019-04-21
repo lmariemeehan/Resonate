@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Album extends Component {
 	constructor(props) {
@@ -140,7 +141,6 @@ class Album extends Component {
      return (
 			<section className="album-page">
 
-	 	  <div className="album">
 	      <div className="album-cover-art">
 	      	<img src={this.state.album.albumCover} alt={this.state.album.title}/>
 				</div>
@@ -150,9 +150,7 @@ class Album extends Component {
 	        <h2 className="artist">{this.state.album.artist}</h2>
 	        <div id="release-info">{this.state.album.releaseInfo}</div>
 	      </div>
-			</div>
 
-			<div className="song-controls">
 				<div className="song-list">
 	       	<table>
 						<colgroup>
@@ -172,7 +170,7 @@ class Album extends Component {
 	        </table>
 				</div>
 
-			<div className="playerbar">
+		<div className="playerbar">
       <PlayerBar
       	isPlaying={this.state.isPlaying}
       	currentSong={this.state.currentSong}
@@ -187,7 +185,6 @@ class Album extends Component {
         handleVolumeChange={(e) => this.handleVolumeChange(e)}
       	/>
 				</div>
-			</div>
 
 			</section>
      );

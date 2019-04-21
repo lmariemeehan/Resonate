@@ -61,7 +61,7 @@ ul.topnav li a:hover {
 
 .hero-title a:hover {
   text-transform: uppercase;
-  font-size: 8rem;
+  font-size: 6rem;
   text-shadow: 2px 6px 0px rgb(58,23,63);
   text-decoration: none;
   color: deeppink;
@@ -94,7 +94,7 @@ ul.topnav li a:hover {
   font-size: 64px;
 }
 
- /*Library Page */
+ /* Library Page */
 
 .library {
   background-color: #e056fd;
@@ -127,42 +127,27 @@ ul.topnav li a:hover {
   color: #75a633;
 }
 
-/* Album Page */
+ /*  Album Page  */
 
 .album-page {
   background-color: #e056fd;
   background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.album {
-  display: flex;
-  flex-direction: row;
-}
-
-.album img {
-  padding-top: 40px;
-  padding-left: 80px;
+.album-cover-art img{
   box-shadow: -18px 19px 50px -5px #050405;
   margin-bottom: 15px;
+  width: 400px;
+  height: 400px;
 }
 
 .album-info {
-  padding: 40px;
-}
-
-.song-controls {
-  display: flex;
-  flex-direction: column;
-}
-
-.song-list {
-  align-self:center;
-  padding-bottom: 55px;
-}
-
-.playerbar {
-  align-self: stretch;
+  margin-top: 40px;
+  grid-area: 2/1/3/2;
 }
 
 #release-info {
@@ -186,5 +171,26 @@ ul.topnav li a:hover {
   100% {
     background-position: 500%;
   }
+}
 
+table {
+  width: 100%;
+  grid-area: 2/2/3/3;
+}
+
+.song {
+  font-size: 25px;
+  height: 80px;
+}
+
+.song:hover {
+  background-color: #005a93;
+}
+
+.playerbar {
+  grid-area: 3/1/4/3;
+}
+
+.buttons {
+  background-color: transparent;
 }

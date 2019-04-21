@@ -4,6 +4,11 @@ import Landing from './components/Landing';
 import Library from './components/Library';
 import Album from './components/Album';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faPlay)
 
 class App extends Component {
   render() {
