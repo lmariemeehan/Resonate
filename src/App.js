@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <div className="App">
       <header>
-      <ul class="topnav">
-        <li class="navbrand"> <a href="/">Resonate</a></li>
-        <li class="navlibrary"> <a href="/library">Library</a></li>
+      <ul className="topnav">
+        <li className="navbrand"> <a href="/">Resonate</a></li>
+        <li className="navlibrary"> <a href="/library">Library</a></li>
       </ul>
       </header>
 

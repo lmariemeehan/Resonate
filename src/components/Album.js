@@ -141,7 +141,7 @@ class Album extends Component {
 			<section className="album-page">
 
 	 	  <div className="album">
-	      <div className="album-picture">
+	      <div className="album-cover-art">
 	      	<img src={this.state.album.albumCover} alt={this.state.album.title}/>
 				</div>
 

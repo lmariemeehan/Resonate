@@ -141,7 +141,8 @@ ul.topnav li a:hover {
 }
 
 .album img {
-/*  padding: 40px 100px; */
+  padding-top: 40px;
+  padding-left: 80px;
   box-shadow: -18px 19px 50px -5px #050405;
   margin-bottom: 15px;
 }
