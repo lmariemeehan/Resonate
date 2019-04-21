@@ -40,9 +40,7 @@ ul.topnav li a:hover {
   background-position: center;
   background-size:cover;
   color: white;
-  border-bottom: solid;
-  border-color: black;
-  border-width: thick;
+  box-shadow: -18px 19px 50px -5px #050405;
 }
 
 /* Landing page image link to library*/
@@ -53,9 +51,17 @@ ul.topnav li a:hover {
   text-decoration: none;
 }
 
-.hero-title a:hover{
+.hero-title a:visited {
   text-transform: uppercase;
   font-size: 5rem;
+  text-shadow: 2px 6px 0px rgb(58,23,63);
+  text-decoration: none;
+  color: deeppink;
+}
+
+.hero-title a:hover {
+  text-transform: uppercase;
+  font-size: 8rem;
   text-shadow: 2px 6px 0px rgb(58,23,63);
   text-decoration: none;
   color: deeppink;
@@ -65,8 +71,10 @@ ul.topnav li a:hover {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 10px;
-  background: linear-gradient(to bottom, #666699 0%, #ff99cc 100%);
+  background-color: #e056fd;
+  background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
   height: 300px;
+  color: deeppink;
 }
 
 .selling-point {
@@ -86,26 +94,24 @@ ul.topnav li a:hover {
   font-size: 64px;
 }
 
-/*Library Page */
+ /*Library Page */
 
 .library {
-  background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-color: #e056fd;
+  background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
   background-size: cover;
   background-position: center;
 }
 
 .album-images{
-  margin: auto;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  height: 300px;
   justify-content: center;
+  box-shadow: -18px 19px 50px -5px #050405;
+  margin-bottom: 15px;
 }
 
 .albumLinks a:link {
   font-size: 20px;
-  font-weight: bold;
+/*  font-weight: bold; */
   color: white;
   text-decoration: none;
 }
@@ -113,32 +119,31 @@ ul.topnav li a:hover {
 .albumLinks a:visited {
   font-size: 20px;
   font-weight: bold;
-  color: cyan;
+  color: #53d3fd;
   text-decoration: none;
 }
 
 .albumLinks a:hover {
-  text-decoration: underline;
+  color: #75a633;
 }
 
 /* Album Page */
 
 .album-page {
-  background-image: url("blur_bg_3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #e056fd;
+  background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
   color: white;
 }
 
 .album {
   display: flex;
   flex-direction: row;
-
 }
 
 .album img {
-  padding: 40px 100px;
+/*  padding: 40px 100px; */
+  box-shadow: -18px 19px 50px -5px #050405;
+  margin-bottom: 15px;
 }
 
 .album-info {
@@ -157,4 +162,28 @@ ul.topnav li a:hover {
 
 .playerbar {
   align-self: stretch;
+}
+
+#release-info {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+
 }

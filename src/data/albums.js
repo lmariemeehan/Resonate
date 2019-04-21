@@ -14,7 +14,7 @@ export default [{
 }, {
     title: 'The Telephone',
     artist: 'Guglielmo Marconi',
-    releaseInfo: '1909 EM',
+    releaseInfo: '1909 EM Records',
     albumCover: '/assets/images/album_covers/02.jpg',
     slug: 'the-telephone',
     songs: [
