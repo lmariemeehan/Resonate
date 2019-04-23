@@ -1,3 +1,27 @@
+Formerly known as Bloc-Jams. This is a SPA music player built with React.js from the ground-up. Similar to Spotify. This was the first web app project that I built while undergoing the Bloc curriculum.
+
+List of features:
+* Plays music (of course)
+* There's volume control for all of your volume control needs.
+* There's a player bar with controls for previous track, next track, play/pause
+* There's a time control slider in case you wish to propel yourself forwards or backwards in time.
+
+List of tools that played a role in the make up of this baby:
+* npm - Node package manager
+* React Developer Tools Chrome extension - helped with debugging
+* JSX - This was written with JSX which is JavaScript expressions with an HTML-like syntax
+* Babel - to help enable JSX syntax support
+* React Router - to help with client-side page transitions
+* Git - version-control
+* CSS/CSS Grid - for layout and style
+* Bootstrap - pretty much only used for the navbar at the top
+* Ionicons - for icons such as play/pause/etc.
+* FontAwesomeIcon - for other icons
+
+Check out the Live Version at https://lmariemeehan-bloc-jams-react.herokuapp.com
+
+
+Curious about React? See below:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
