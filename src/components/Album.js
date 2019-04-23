@@ -127,9 +127,9 @@ class Album extends Component {
   	const isSameSong = this.state.currentSong === song;
 
     	if (!this.state.isPlaying && isSameSong) {
-      return <ion-icon name="play"></ion-icon>;
+      return <span className="play-icon"><ion-icon name="play"></ion-icon></span>;
      } else if (isSameSong && this.state.isPlaying) {
-      return <ion-icon name="pause"></ion-icon>;
+      return <span className="pause-icon"><ion-icon name="pause"></ion-icon></span>;
      } else if (index === this.state.isHovered) {
       return <ion-icon name="play"></ion-icon>;
      } else {
@@ -151,24 +151,22 @@ class Album extends Component {
 	        <div id="release-info">{this.state.album.releaseInfo}</div>
 	      </div>
 
-				<div className="song-list">
-	       	<table>
-						<colgroup>
-	          	<col id="song-number-column" />
-	            <col id="song-title-column" />
-	            <col id="song-duration-column" />
-	          </colgroup>
-		        <tbody>
-		          {this.state.album.songs.map( (song, index) =>
-			          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
-		            <td className="song-number"> {this.handleHoverButton(song, index)} </td>
-		            <td className="song-title"> {song.title} </td>
-		            <td className="song-duration"> {this.formatTime(song.duration)} </td>
-		            </tr>
-		          )}
-			      </tbody>
-	        </table>
-				</div>
+       	<table className="song-list">
+					<colgroup>
+          	<col id="song-number-column" />
+            <col id="song-title-column" />
+            <col id="song-duration-column" />
+          </colgroup>
+	        <tbody>
+	          {this.state.album.songs.map( (song, index) =>
+		          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
+	            <td className="song-number"> {this.handleHoverButton(song, index)} </td>
+	            <td className="song-title"> {song.title} </td>
+	            <td className="song-duration"> {this.formatTime(song.duration)} </td>
+	            </tr>
+	          )}
+		      </tbody>
+        </table>
 
 		<div className="playerbar">
       <PlayerBar
