@@ -14,7 +14,6 @@
 * React Router - to help with client-side page transitions
 * Git - version-control
 * CSS/CSS Grid - for layout and style
-* Bootstrap - pretty much only used for the navbar at the top
 * Ionicons - for icons such as play/pause/etc.
 * FontAwesomeIcon - for other icons
 

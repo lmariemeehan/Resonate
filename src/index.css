@@ -56,7 +56,7 @@ ul.topnav li a:hover {
   font-size: 5rem;
   text-shadow: 2px 6px 0px rgb(58,23,63);
   text-decoration: none;
-  color: deeppink;
+  color: #3375a6;
 }
 
 .hero-title a:hover {
@@ -74,7 +74,7 @@ ul.topnav li a:hover {
   background-color: #e056fd;
   background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
   height: 300px;
-  color: deeppink;
+  color: white;
 }
 
 .selling-point {
@@ -84,14 +84,17 @@ ul.topnav li a:hover {
 
 .music-note {
   font-size: 64px;
+  color: deeppink;
 }
 
 .streaming-icon {
   font-size: 70px;
+  color: deeppink;
 }
 
 .phone-icon {
   font-size: 64px;
+  color: deeppink;
 }
 
  /* Library Page */
@@ -111,7 +114,7 @@ ul.topnav li a:hover {
 
 .albumLinks a:link {
   font-size: 20px;
-/*  font-weight: bold; */
+  font-weight: bold;
   color: white;
   text-decoration: none;
 }
@@ -124,7 +127,7 @@ ul.topnav li a:hover {
 }
 
 .albumLinks a:hover {
-  color: #75a633;
+  color: deeppink;
 }
 
  /*  Album Page  */
