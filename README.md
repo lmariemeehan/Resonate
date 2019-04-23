@@ -1,4 +1,4 @@
-# Formerly known as Bloc-Jams. This is a SPA music player built with React.js from the ground-up. Similar to Spotify. This was the first web app project that I built while undergoing the Bloc curriculum.
+## Formerly known as Bloc-Jams. This is a SPA music player built with React.js from the ground-up. Similar to Spotify. This was the first web app project that I built while undergoing the Bloc curriculum.
 
 ## List of features:
 * Plays music (of course)
