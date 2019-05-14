@@ -16,7 +16,7 @@ class App extends Component {
       <div className="App">
       <header>
       <ul className="topnav">
-        <li className="navbrand"> <a href="/">(( Resonate ))</a></li>
+        <li className="navbrand"> <a href="/">Resonate</a></li>
         <li className="navlibrary"> <a href="/library">Library</a></li>
       </ul>
       </header>
