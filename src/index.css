@@ -54,10 +54,6 @@ ul.topnav li a {
   font-size: 1.75rem;
 }
 
-ul.topnav li a:hover {
-  color: deeppink;
-}
-
 @media screen and (max-width: 600px) {
   ul.topnav li.navlibrary,
   ul.topnav li {float: none;}
