@@ -76,4 +76,17 @@ export default [{
       { title: 'Pink', duration: '153.14', audioSrc: '/assets/music/pink.mp3' },
       { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
   ]
+}, {
+  title: 'Holding Hands',
+  artist: 'StockSnap',
+  releaseInfo: '2017 Man Woman Records',
+  albumCover: '/assets/images/album_covers/people.jpg',
+  slug: 'holding-hands',
+  songs: [
+      { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
+      { title: 'Green', duration: '103.96', audioSrc: '/assets/music/green.mp3' },
+      { title: 'Red', duration: '268.45', audioSrc: '/assets/music/red.mp3' },
+      { title: 'Pink', duration: '153.14', audioSrc: '/assets/music/pink.mp3' },
+      { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
+  ]
 }];
