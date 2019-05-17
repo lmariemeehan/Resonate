@@ -142,6 +142,8 @@ ul.topnav li a {
   justify-content: center;
   box-shadow: -18px 19px 50px -5px #050405;
   margin-bottom: 15px;
+  height: 200px;
+  width: 250px;
 }
 
 .albumLinks a:link {
