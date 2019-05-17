@@ -103,11 +103,11 @@ export default [{
       { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
   ]
 }, {
-  title: 'Thunderstorm',
-  artist: 'O12',
-  releaseInfo: '2018 Flash Records',
-  albumCover: '/assets/images/album_covers/thunderstorm.jpg',
-  slug: 'thunderstorm',
+  title: 'Horse Herd',
+  artist: 'Bhakti2',
+  releaseInfo: '2014 Nature Records',
+  albumCover: '/assets/images/album_covers/horses.jpg',
+  slug: 'horse-herd',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
       { title: 'Green', duration: '103.96', audioSrc: '/assets/music/green.mp3' },
@@ -116,11 +116,11 @@ export default [{
       { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
   ]
 }, {
-  title: 'Horse Herd',
-  artist: 'Bhakti2',
-  releaseInfo: '2014 Nature Records',
-  albumCover: '/assets/images/album_covers/horses.jpg',
-  slug: 'horse-herd',
+  title: 'Thunderstorm',
+  artist: 'O12',
+  releaseInfo: '2018 Flash Records',
+  albumCover: '/assets/images/album_covers/thunderstorm.jpg',
+  slug: 'thunderstorm',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
       { title: 'Green', duration: '103.96', audioSrc: '/assets/music/green.mp3' },
