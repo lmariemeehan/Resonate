@@ -19,7 +19,7 @@ import albumData from './../data/albums';
           this.state.albums.map( (album, index) =>
               <Link to={`/album/${album.slug}`} key={index}>
                <img className="album-images" src={album.albumCover} alt={album.title} />
-               <div>{album.title}</div>
+               <div className="album_title">{album.title}</div>
                <div>{album.artist}</div>
                <div>{album.songs.length} songs</div>
                 </Link>

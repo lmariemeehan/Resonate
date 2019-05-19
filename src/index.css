@@ -40,7 +40,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
+  background-color: black;
 }
 
 ul.topnav li.navbrand {float: left;}
@@ -52,7 +52,7 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.75rem;
+  font-size: 1.35rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -61,18 +61,24 @@ ul.topnav li a {
 }
 
 /*Landing page image*/
-.web-image {
-  background-image: url("djsilhouette.jpg");
-  height: 500px;
+.carousel-item {
+  background-color: #000000;
+  height: 100vh;
+  min-height: 300px;
   width: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-size:cover;
-  color: white;
-  box-shadow: -18px 19px 50px -5px #050405;
+  background-repeat: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+-carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 /* Landing page image link to library*/
@@ -160,18 +166,26 @@ html {
   width: 250px;
 }
 
-.albumLinks a:link {
-  font-size: 20px;
+.album_title {
   font-weight: bold;
+  font-size: 16px;
+}
+
+.albumLinks a:link {
+  font-size: 14px;
+/*  font-weight: bold; */
   color: white;
   text-decoration: none;
+  letter-spacing: .02em;
+  margin-bottom: 20px;
 }
 
 .albumLinks a:visited {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 14px;
+/*  font-weight: bold; */
   color: #61dafb;
   text-decoration: none;
+  letter-spacing: .02em;
 }
 
 .albumLinks a:hover {
