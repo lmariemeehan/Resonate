@@ -16,15 +16,15 @@ const Landing = () => (
 
       <div className="carousel-inner">
       /* Slide One */
-        <div className="carousel-item active" data-interval="10000">
+        <div className="carousel-item active">
           <img src="/assets/images/landing_page/sound-1127416_1920.jpg" className="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
-            <h1 className="hero-title"><a href="/library">Turn the music <span>up!</span></a></h1>
+            <h1 className="hero-title"><a href="/library">Turn the music <span>UP!</span></a></h1>
           </div>
         </div>
 
         /* Slide Two */
-        <div className="carousel-item" data-interval="5000">
+        <div className="carousel-item" >
           <img src="/assets/images/landing_page/fantasy-3761246_1920.jpg" className="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
           <span className="music-note"><ion-icon name="ios-musical-notes"></ion-icon></span>
@@ -34,7 +34,7 @@ const Landing = () => (
         </div>
 
         /* Slide Three */
-        <div className="carousel-item" data-interval="5000">
+        <div className="carousel-item" >
           <img src="/assets/images/landing_page/djsilhouette.jpg" className="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <span className="streaming-icon"><ion-icon name="ios-radio"></ion-icon></span>
@@ -44,7 +44,7 @@ const Landing = () => (
         </div>
 
         /* Slide Four */
-        <div className="carousel-item" data-interval="5000">
+        <div className="carousel-item" >
           <img src="/assets/images/landing_page/mobile_adults.jpg" className="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <span className="phone-icon"><ion-icon name="phone-portrait"></ion-icon></span>
