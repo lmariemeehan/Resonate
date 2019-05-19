@@ -11,22 +11,30 @@ const Landing = () => (
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
 
       <div className="carousel-inner">
       /* Slide One */
-        <div className="carousel-item active">
-          <img src="/assets/images/landing_page/fantasy-3761246_1920.jpg" className="d-block w-100" alt="..." />
+        <div className="carousel-item active" data-interval="10000">
+          <img src="/assets/images/landing_page/sound-1127416_1920.jpg" className="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h1 className="hero-title"><a href="/library">Turn the music <span>up!</span></a></h1>
-            <span className="music-note"><ion-icon name="ios-musical-notes"></ion-icon></span>
-            <h2 className="point-title">Choose your music</h2>
-            <p className="point-description">The world is full of music; why should you have to listen to music that someone else chose?</p>
           </div>
         </div>
 
         /* Slide Two */
-        <div className="carousel-item">
+        <div className="carousel-item" data-interval="5000">
+          <img src="/assets/images/landing_page/fantasy-3761246_1920.jpg" className="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+          <span className="music-note"><ion-icon name="ios-musical-notes"></ion-icon></span>
+          <h2 className="point-title">Choose your music</h2>
+          <p className="point-description">The world is full of music; why should you have to listen to music that someone else chose?</p>
+          </div>
+        </div>
+
+        /* Slide Three */
+        <div className="carousel-item" data-interval="5000">
           <img src="/assets/images/landing_page/djsilhouette.jpg" className="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <span className="streaming-icon"><ion-icon name="ios-radio"></ion-icon></span>
@@ -35,8 +43,8 @@ const Landing = () => (
           </div>
         </div>
 
-        /* Slide Three */
-        <div className="carousel-item">
+        /* Slide Four */
+        <div className="carousel-item" data-interval="5000">
           <img src="/assets/images/landing_page/mobile_adults.jpg" className="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <span className="phone-icon"><ion-icon name="phone-portrait"></ion-icon></span>

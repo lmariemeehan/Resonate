@@ -9,6 +9,7 @@ ul.topnav li a::after {
 }
 
 ul.topnav li a::before {
+  color: #2ECDBA;
 	margin-right: 10px;
 	content: '(( ';
 	-webkit-transform: translateX(20px);
@@ -17,6 +18,7 @@ ul.topnav li a::before {
 }
 
 ul.topnav li a::after {
+  color: #2ECDBA;
 	margin-left: 10px;
 	content: ' ))';
 	-webkit-transform: translateX(-20px);
@@ -118,22 +120,22 @@ ul.topnav li a {
 .selling-point {
   padding: 20px;
   text-align: center;
-  grid-row: 1 / 2;
+  
 }
 
 .music-note {
   font-size: 64px;
-  color: deeppink;
+  color: #2ECDBA;
 }
 
 .streaming-icon {
   font-size: 70px;
-  color: deeppink;
+  color: #2ECDBA;
 }
 
 .phone-icon {
   font-size: 64px;
-  color: deeppink;
+  color: #2ECDBA;
 }
 
  /* Library Page */
@@ -183,13 +185,13 @@ html {
 .albumLinks a:visited {
   font-size: 14px;
 /*  font-weight: bold; */
-  color: #61dafb;
+  color: #D2ADD5;
   text-decoration: none;
   letter-spacing: .02em;
 }
 
 .albumLinks a:hover {
-  color: deeppink;
+  color: #2ECDBA;
 }
 
  /*  Album Page  */
