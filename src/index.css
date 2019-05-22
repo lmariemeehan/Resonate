@@ -3,8 +3,8 @@ body {
 }
 
 /* Nav bar */
-.topnav a::before,
-.topnav a::after {
+.navbar-custom a::before,
+.navbar-custom a::after {
 	display: inline-block;
 	opacity: 0;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -12,7 +12,7 @@ body {
 	transition: transform 0.3s, opacity 0.2s;
 }
 
-.topnav a::before {
+.navbar-custom a::before {
   color: #2ECDBA;
 	margin-right: 10px;
 	content: '(( ';
@@ -21,7 +21,7 @@ body {
 	transform: translateX(20px);
 }
 
-.topnav a::after {
+.navbar-custom a::after {
   color: #2ECDBA;
 	margin-left: 10px;
 	content: ' ))';
@@ -30,10 +30,10 @@ body {
 	transform: translateX(-20px);
 }
 
-.topnav a:hover::before,
-.topnav a:hover::after,
-.topnav a:focus::before,
-.topnav a:focus::after {
+.navbar-custom a:hover::before,
+.navbar-custom a:hover::after,
+.navbar-custom a:focus::before,
+.navbar-custom a:focus::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
@@ -161,7 +161,6 @@ body {
 .selling-point {
   padding: 20px;
   text-align: center;
-
 }
 
 .music-note {

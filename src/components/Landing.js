@@ -10,7 +10,7 @@ const Landing = () => (
           <h4 className="hero-title"><a href="/library">Turn the music <span>UP!</span></a></h4>
         </div>
 
-
+        {/*Sellings Points*/}
         <div className="first-point" >
           <span className="music-note"><ion-icon name="ios-musical-notes"></ion-icon></span>
           <h2 className="point-title">Choose your music</h2>

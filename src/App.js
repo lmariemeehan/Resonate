@@ -16,14 +16,12 @@ class App extends Component {
     return (
       <div className="App">
 
-      <div className="topnav">
         <nav className="navbar sticky-top navbar-custom">
           <a className="navbar-brand" href="/"><span className="navbar-icon"><ion-icon name="headset"></ion-icon></span>RESONATE</a>
           <div className="navbar-nav">
-            <a class="nav-item nav-link" href="/library">LIBRARY</a>
+            <a className="nav-item nav-link" href="/library">LIBRARY</a>
           </div>
         </nav>
-      </div>
 
        <main>
          <Route exact path="/" component={Landing} />
