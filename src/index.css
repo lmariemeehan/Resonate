@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* Nav bar */
+/*   Nav bar   */
 .navbar-custom a::before,
 .navbar-custom a::after {
 	display: inline-block;
@@ -69,28 +69,9 @@ body {
   font-size: 40px;
 }
 
-/*Landing page image*/
-.carousel-item {
-  background-color: #000000;
-  height: 100vh;
-  min-height: 300px;
-  width: 100%;
-  background-repeat: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+/*   Landing page   */
 
--carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-}
-
-/* Landing page image link to library*/
+/* Anchor animation for link to library */
 .hero-title a::before,
 .hero-title a::after {
 	display: inline-block;
@@ -101,7 +82,7 @@ body {
 }
 
 .hero-title a::before {
-  color: #2ECDBA;
+  color: #ff1493;
 	margin-right: 10px;
 	content: '(( ';
 	-webkit-transform: translateX(20px);
@@ -110,7 +91,7 @@ body {
 }
 
 .hero-title a::after {
-  color: #2ECDBA;
+  color: #ff1493;
 	margin-left: 10px;
 	content: ' ))';
 	-webkit-transform: translateX(-20px);
@@ -129,7 +110,7 @@ body {
 }
 
 .hero-title a{
-  font-size: 250px;
+  font-size: 100px;
   font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
   color: white;
@@ -145,21 +126,18 @@ body {
 }
 
 .hero-title a:hover{
-  color: #2ECDBA;
+  color: #ff1493;
 }
 
 .sellingpoints-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  background-color: #e056fd;
-  background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
-  color: white;
+  display: flex;
+  justify-content: space-around;
 }
 
 .selling-point {
-  padding: 20px;
+  border-color: black;
+  border-width: 5px;
+  border-style: dashed;
   text-align: center;
 }
 
@@ -169,7 +147,7 @@ body {
 }
 
 .streaming-icon {
-  font-size: 90px;
+  font-size: 72px;
   color: #2ECDBA;
 }
 
@@ -178,9 +156,9 @@ body {
   color: #2ECDBA;
 }
 
- /* Library Page */
+ /*   Library Page   */
 
-html {
+html, body {
   height: 100%;
 }
 
@@ -206,6 +184,7 @@ html {
   margin-bottom: 15px;
   height: 200px;
   width: 250px;
+  border-radius: 3px;
 }
 
 .album_title {
