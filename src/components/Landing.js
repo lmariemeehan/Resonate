@@ -6,7 +6,6 @@ const Landing = () => (
   <section className="landing">
 
     <div className="landing_page">
-      <img src="/assets/images/landing_page/woman-1540802_1920.jpg" className="d-block w-100" alt="Woman dancing in front of oversized loud speaker" />
       <h4 className="hero-title"><a href="/library">Turn the music <span>UP!</span></a></h4>
     </div>
 

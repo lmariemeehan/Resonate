@@ -71,6 +71,20 @@ body {
 
 /*   Landing page   */
 
+.landing_page {
+  background-image: url('/assets/images/landing_page/woman-1540802_1920.jpg');
+  background-color: #000000;
+  height: 100vh;
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 /* Anchor animation for link to library */
 .hero-title a::before,
 .hero-title a::after {
@@ -110,6 +124,9 @@ body {
 }
 
 .hero-title a{
+  position: absolute;
+  bottom: 0;
+  left: 0;
   font-size: 100px;
   font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
