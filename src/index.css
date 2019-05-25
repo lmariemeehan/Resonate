@@ -70,7 +70,6 @@ body {
 }
 
 /*   Landing page   */
-
 .landing_page {
   background-image: url('/assets/images/landing_page/woman-1540802_1920.jpg');
   background-color: #000000;
@@ -193,6 +192,7 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: 300px;
 }
 
 .album-images{
