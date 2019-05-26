@@ -77,11 +77,11 @@ export default [{
     { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
   ]
 }, {
-  title: 'The Bellyflop',
+  title: 'The Cannonball',
   artist: 'Guy',
   releaseInfo: '2012 Swim Records',
   albumCover: '/assets/images/album_covers/03.jpg',
-  slug: 'the-bellyflop',
+  slug: 'the-cannonball',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
       { title: 'Green', duration: '103.96', audioSrc: '/assets/music/green.mp3' },

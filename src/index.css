@@ -196,13 +196,14 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 300px;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .album-images{
   justify-content: center;
   box-shadow: -18px 19px 50px -5px #050405;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   height: 200px;
   width: 250px;
   border-radius: 3px;
@@ -219,7 +220,7 @@ html {
   color: white;
   text-decoration: none;
   letter-spacing: .02em;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .albumLinks a:visited {
