@@ -184,8 +184,14 @@ html, body {
   background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height: 100%;
 }
 
 .albumLinks{
