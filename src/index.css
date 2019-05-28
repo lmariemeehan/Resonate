@@ -195,18 +195,22 @@ html {
 .albumLinks{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
 
 .album-images{
-  justify-content: center;
   box-shadow: -18px 19px 50px -5px #050405;
-  margin-bottom: 25px;
+  margin: 25px;
   height: 200px;
   width: 250px;
-  border-radius: 3px;
+  border-radius: 4px;
+}
+
+.albumLinks img:hover {
+  opacity: .5;
+  transition: .7s;
 }
 
 .album_title {
@@ -216,7 +220,6 @@ html {
 
 .albumLinks a:link {
   font-size: 14px;
-/*  font-weight: bold; */
   color: white;
   text-decoration: none;
   letter-spacing: .02em;
