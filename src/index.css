@@ -209,8 +209,8 @@ html {
 }
 
 .albumLinks img:hover {
-  opacity: .5;
-  transition: .7s;
+  opacity: 0.25;
+  transition: .2s;
 }
 
 .album_title {
