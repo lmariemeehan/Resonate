@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/*   Nav bar   */
+/*   NAV BAR ANIMATION   */
 .navbar-custom a::before,
 .navbar-custom a::after {
 	display: inline-block;
@@ -13,7 +13,7 @@ body {
 }
 
 .navbar-custom a::before {
-  color: #2ECDBA;
+  color: #ff1493;
 	margin-right: 10px;
 	content: '[ ';
 	-webkit-transform: translateX(20px);
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-custom a::after {
-  color: #2ECDBA;
+  color: #ff1493;
 	margin-left: 10px;
 	content: ' ]';
 	-webkit-transform: translateX(-20px);
@@ -40,6 +40,7 @@ body {
 	transform: translateX(0px);
 }
 
+/*   NAV BAR   */
 .navbar-custom {
   background-color: black;
   font-family: 'Fjalla One', sans-serif;
@@ -51,7 +52,7 @@ body {
 }
 
 .navbar-custom a:hover{
-  color: #2ECDBA;
+  color: #ff1493;
   font-size: 1.5rem;
 }
 
@@ -69,9 +70,11 @@ body {
   font-size: 40px;
 }
 
-/*   Landing page   */
+/*   LANDING PAGE   */
+
 .landing_page {
   background-image: url('/assets/images/landing_page/woman-1540802_1920.jpg');
+  background-attachment: fixed;
   background-color: #000000;
   height: 100vh;
   min-height: 300px;
@@ -83,8 +86,8 @@ body {
   background-size: cover;
 }
 
+/*   ANCHOR ANIMATION LINK TO LIBRARY   */
 
-/* Anchor animation for link to library */
 .hero-title a::before,
 .hero-title a::after {
 	display: inline-block;
@@ -172,7 +175,7 @@ body {
   color: #2ECDBA;
 }
 
- /*   Library Page   */
+ /*   LIBRARY PAGE   */
 
 html {
   height: 100%;
@@ -229,16 +232,16 @@ html {
 .albumLinks a:visited {
   font-size: 14px;
 /*  font-weight: bold; */
-  color: #cd2e91;
+  color: #2ecdba;
   text-decoration: none;
   letter-spacing: .02em;
 }
 
 .albumLinks a:hover {
-  color: #2ECDBA;
+  color: #ff1493;
 }
 
- /*  Album Page  */
+ /*   ALBUM PAGE   */
 
 .album-page {
   background-color: #e056fd;
@@ -279,7 +282,7 @@ html {
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
-/*album info animation*/
+/*   ALBUM INFO ANIMATION   */
 @keyframes animate {
   0% {
     background-position: -500%;
