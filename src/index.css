@@ -98,7 +98,7 @@ body {
 }
 
 .hero-title a::before {
-  color: #ff1493;
+  color: #fff;
 	margin-right: 10px;
 	content: '[ ';
 	-webkit-transform: translateX(20px);
@@ -107,7 +107,7 @@ body {
 }
 
 .hero-title a::after {
-  color: #ff1493;
+  color: #fff;
 	margin-left: 10px;
 	content: ' ]';
 	-webkit-transform: translateX(-20px);
@@ -137,27 +137,32 @@ body {
     0 0  5px #fff,
     0 0  10px #fff,
     0 0  15px #fff,
-    0 0  20px #F94F83,
-    0 0  35px #F94F83,
-    0 0  40px #F94F83,
-    0 0  60px #F94F83,
-    0 0  90px #F94F83
+    0 0  20px #000,
+    0 0  35px #000,
+    0 0  40px #000,
+    0 0  60px #000,
+    0 0  90px #000
 }
 
 .hero-title a:hover{
-  color: #ff1493;
+  color: #fff;
 }
 
 .sellingpoints-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .selling-point {
   border-color: black;
-  border-width: 5px;
+  border-width: 3px;
   border-style: dashed;
   text-align: center;
+
 }
 
 .music-note {
