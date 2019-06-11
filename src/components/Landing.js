@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'bootstrap';
 import './Landing.css';
+import { Navbar } from 'bootstrap';
 
 const Landing = () => (
   <section className="landing">
@@ -31,6 +32,13 @@ const Landing = () => (
         </div>
 
       </div>
+
+      <nav className="navbar fixed-bottom navbar-custom">
+        <a className="portfolio-site" href="https://www.lmariemeehan.com" target="_blank">Laura Meehan</a>
+        <div className="github-site">
+          <a className="github" href="https://github.com/lmariemeehan" target="_blank">GitHub</a>
+        </div>
+      </nav>
 
   </section>
 );

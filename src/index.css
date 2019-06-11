@@ -152,17 +152,18 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
 
+  height: auto;
+  background: gray;
 }
 
 .selling-point {
   border-color: black;
   border-width: 3px;
-  border-style: dashed;
   text-align: center;
-
+  background: white;
+  color: black;
 }
 
 .music-note {
