@@ -133,16 +133,18 @@ body {
   font-size: 100px;
   font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
-  color: #537895;
+
+  color: #fff;
   text-shadow:
-    0 0  5px #fff,
-    0 0  10px #fff,
-    0 0  15px #fff,
-    0 0  20px #000,
-    0 0  35px #000,
-    0 0  40px #000,
-    0 0  60px #000,
-    0 0  90px #000
+    0 0  5px #537895,
+    0 0  10px #537895,
+    0 0  15px #537895,
+    0 0  20px #fff,
+    0 0  35px #fff,
+    0 0  40px #fff,
+    0 0  60px #fff,
+    0 0  90px #fff
+
 }
 
 .hero-title span a:hover{
@@ -150,16 +152,22 @@ body {
 }
 
 .sellingpoints-container {
+  padding-top: 40px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   height: auto;
   background-color: #000000;
-background-image: linear-gradient(337deg, #000000 0%, #2c3e50 74%);
+  background-image: linear-gradient(337deg, #000000 0%, #2c3e50 74%);
 }
 
 .selling-point {
+  padding: 15px;
+  margin: 10px;
+  width: 350px;
+  height: 300px;
   border-color: black;
   border-width: 3px;
   text-align: center;
