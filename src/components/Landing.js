@@ -36,6 +36,7 @@ const Landing = () => (
       <nav className="navbar fixed-bottom navbar-custom">
         <a className="portfolio-site" href="https://www.lmariemeehan.com" target="_blank">Laura Meehan</a>
         <div className="github-site">
+        <span className="github-icon"><ion-icon className="logo-github"></ion-icon></span>
           <a className="github" href="https://github.com/lmariemeehan" target="_blank">GitHub</a>
         </div>
       </nav>
