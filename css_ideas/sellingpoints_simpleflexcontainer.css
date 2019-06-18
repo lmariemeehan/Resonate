@@ -1,0 +1,49 @@
+
+.sellingpoints-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.selling-point {
+  padding: 15px;
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+  border-color: black;
+  border-width: 3px;
+  text-align: center;
+  background: #F2F4F0;
+  color: black;
+  border-radius: 8px;
+}
+
+.selling-point p {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+.music-note {
+  font-size: 72px;
+  color: #6E6685;
+}
+
+.streaming-icon {
+  font-size: 72px;
+  color: #6E6685;
+}
+
+.phone-icon {
+  font-size: 72px;
+  color: #6E6685;
+}

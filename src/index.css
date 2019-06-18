@@ -2,57 +2,19 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/*   NAV BAR ANIMATION   */
-.navbar-custom a::before,
-.navbar-custom a::after {
-	display: inline-block;
-	opacity: 0;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
-	transition: transform 0.3s, opacity 0.2s;
-}
-
-.navbar-custom a::before {
-  color: #ff1493;
-	margin-right: 10px;
-	content: '[ ';
-	-webkit-transform: translateX(20px);
-	-moz-transform: translateX(20px);
-	transform: translateX(20px);
-}
-
-.navbar-custom a::after {
-  color: #ff1493;
-	margin-left: 10px;
-	content: ' ]';
-	-webkit-transform: translateX(-20px);
-	-moz-transform: translateX(-20px);
-	transform: translateX(-20px);
-}
-
-.navbar-custom a:hover::before,
-.navbar-custom a:hover::after,
-.navbar-custom a:focus::before,
-.navbar-custom a:focus::after {
-	opacity: 1;
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	transform: translateX(0px);
-}
-
-/*   NAV BAR   */
+/**********   NAV BAR   **********/
 .navbar-custom {
   background-color: black;
   font-family: 'Fjalla One', sans-serif;
 }
 
 .navbar-custom a{
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
 }
 
 .navbar-custom a:hover{
-  color: #ff1493;
+  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -70,12 +32,50 @@ body {
   font-size: 40px;
 }
 
-/*   LANDING PAGE   */
+/*   NAV BAR ANIMATION   */
+.navbar-custom a::before,
+.navbar-custom a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.navbar-custom a::before {
+  color: #fff;
+	margin-right: 10px;
+	content: '[ ';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.navbar-custom a::after {
+  color: #fff;
+	margin-left: 10px;
+	content: ' ]';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.navbar-custom a:hover::before,
+.navbar-custom a:hover::after,
+.navbar-custom a:focus::before,
+.navbar-custom a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+/**********   LANDING PAGE   **********/
 
 .landing_page {
   background-image: url('/assets/images/landing_page/woman-1540802_1920.jpg');
   background-attachment: fixed;
-  background-color: #000000;
+  background-color: #000;
   height: 100vh;
   min-height: 300px;
   width: 100%;
@@ -84,6 +84,10 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+/*
+  -webkit-filter: opacity(.8);
+    filter: opacity(.8);
+*/
 }
 
 /*   ANCHOR ANIMATION LINK TO LIBRARY   */
@@ -136,61 +140,87 @@ body {
 
   color: #fff;
   text-shadow:
-    0 0  5px #537895,
-    0 0  10px #537895,
-    0 0  15px #537895,
+    0 0  5px #6E6685,
+    0 0  10px #6E6685,
+    0 0  15px #6E6685,
     0 0  20px #fff,
     0 0  35px #fff,
     0 0  40px #fff,
     0 0  60px #fff,
     0 0  90px #fff
-
-}
-
-.hero-title span a:hover{
-  color: #fff;
 }
 
 .sellingpoints-container {
-  padding-top: 40px;
-  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  height: auto;
-  background-color: #000000;
-  background-image: linear-gradient(337deg, #000000 0%, #2c3e50 74%);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.selling-point {
-  padding: 15px;
-  margin: 10px;
-  width: 350px;
-  height: 300px;
-  border-color: black;
-  border-width: 3px;
-  text-align: center;
-  background: white;
-  color: black;
+.sellingpoints-container p {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
 }
 
 .music-note {
   font-size: 72px;
-  color: #2ECDBA;
+  color: #6E6685;
 }
 
 .streaming-icon {
   font-size: 72px;
-  color: #2ECDBA;
+  color: #6E6685;
 }
 
 .phone-icon {
   font-size: 72px;
-  color: #2ECDBA;
+  color: #6E6685;
 }
 
- /*   LIBRARY PAGE   */
+.sellingpoints-container img {
+  -webkit-filter: opacity(.8); /* Safari 6.0 - 9.0 */
+    filter: opacity(.8);
+}
+
+.selling-descriptions {
+  margin: 40px;
+}
+
+.selling-point-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding: 15px;
+  text-align: center;
+}
+
+.selling-point-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  text-align: center;
+}
+
+.selling-point-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+}
+
+ /**********   LIBRARY PAGE   **********/
 
 html {
   height: 100%;
@@ -238,25 +268,21 @@ html {
 
 .albumLinks a:link {
   font-size: 14px;
-  color: white;
+  color: #b697df;
   text-decoration: none;
   letter-spacing: .02em;
   margin-bottom: 65px;
 }
 
 .albumLinks a:visited {
-  font-size: 14px;
-/*  font-weight: bold; */
-  color: #2ecdba;
-  text-decoration: none;
-  letter-spacing: .02em;
+  color: #b697df;
 }
 
 .albumLinks a:hover {
-  color: #ff1493;
+  color: #fff;
 }
 
- /*   ALBUM PAGE   */
+ /**********   ALBUM PAGE   **********/
 
 .album-page {
   background-color: #e056fd;
@@ -320,15 +346,15 @@ html {
 }
 
 .song:hover {
-  background-color: #005a93;
+  background-color: #9B919E;
 }
 
 .play-icon {
-  color: deeppink;
+  color: #fff;
 }
 
 .pause-icon {
-  color: deeppink;
+  color: #fff;
 }
 
 .playerbar {
@@ -344,14 +370,14 @@ html {
 
 #previous {
   background: transparent;
-  color: deeppink;
+  color: #fff;
   border: 0;
   font-size: 40px;
 }
 
 #next {
   background: transparent;
-  color: deeppink;
+  color: #fff;
   border: 0;
   font-size: 40px;
 }
