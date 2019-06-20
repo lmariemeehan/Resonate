@@ -171,13 +171,9 @@ h2 {
 }
 
 .card-columns {
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-bottom 3em:
-}
-
-.navbar fixed-bottom {
-  margin-top: 3em;
+  margin-left: 12em;
+  margin-right: 12em;
+  margin-bottom: 12em;
 }
 
 /*
