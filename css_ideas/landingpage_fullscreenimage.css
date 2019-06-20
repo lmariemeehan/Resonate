@@ -1,0 +1,27 @@
+/*--Full screen background image--*/
+.landing_page {
+  background-image: url('/assets/images/landing_page/woman-1540802_1920.jpg');
+  background-color: #000;
+  height: 100vh;
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*--banner hero image--*/
+.hero-image {
+  height: 400px;
+	background-image: url('/assets/images/landing_page/samuele-errico-piccarini-197299-unsplash.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #e7ecef;
+	text-shadow: #274c77 2px 2px;
+  padding-top: 10px;
+  -webkit-filter: opacity(.9);
+  filter: opacity(.9);
+}

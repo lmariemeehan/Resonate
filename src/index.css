@@ -72,9 +72,8 @@ body {
 
 /**********   LANDING PAGE   **********/
 
-.landing_page {
-  background-image: url('/assets/images/landing_page/woman-1540802_1920.jpg');
-  background-attachment: fixed;
+.hero-image {
+	background-image: url('/assets/images/landing_page/samuele-errico-piccarini-197299-unsplash.jpg');
   background-color: #000;
   height: 100vh;
   min-height: 300px;
@@ -84,10 +83,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-/*
-  -webkit-filter: opacity(.8);
-    filter: opacity(.8);
-*/
+	color: #e7ecef;
+	text-shadow: #274c77 2px 2px;
+  padding-top: 10px;
+  -webkit-filter: opacity(.9);
+  filter: opacity(.9);
 }
 
 /*   ANCHOR ANIMATION LINK TO LIBRARY   */
@@ -129,16 +129,18 @@ body {
 	transform: translateX(0px);
 }
 
-.hero-title a{
+.hero-title a {
+  text-align: center;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 35px;
-  font-size: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 75px;
   font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
-
   color: #fff;
+
   text-shadow:
     0 0  5px #6E6685,
     0 0  10px #6E6685,
@@ -148,28 +150,46 @@ body {
     0 0  40px #fff,
     0 0  60px #fff,
     0 0  90px #fff
-}
 
-.sellingpoints-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  min-height: 300px;
-  width: 100%;
-  background-repeat: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .sellingpoints-container p {
   color: #000;
   font-family: 'Raleway', sans-serif;
 }
+
+.sellingpoints-container img {
+  -webkit-filter: opacity(.9); /* Safari 6.0 - 9.0 */
+    filter: opacity(.9);
+}
+
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 50px;
+}
+
+.card-columns {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom 3em:
+}
+
+.navbar fixed-bottom {
+  margin-top: 3em;
+}
+
+/*
+.sellingpoints-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
 
 .music-note {
   font-size: 72px;
@@ -186,11 +206,6 @@ body {
   color: #6E6685;
 }
 
-.sellingpoints-container img {
-  -webkit-filter: opacity(.8); /* Safari 6.0 - 9.0 */
-    filter: opacity(.8);
-}
-
 .selling-descriptions {
   margin: 40px;
 }
@@ -199,7 +214,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px;
+  margin: 30px;
   padding: 15px;
   text-align: center;
 }
