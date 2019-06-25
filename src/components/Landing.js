@@ -12,7 +12,7 @@ const Landing = () => (
 
     <div className="sellingpoints-container">
 
-      <h2>Formerly Bloc Jams</h2>
+      <h2>Resonate.</h2>
 
       <div className="card-columns">
         <div className="card">
@@ -62,7 +62,7 @@ const Landing = () => (
       <nav className="navbar fixed-bottom navbar-custom">
         <a className="portfolio-site" href="https://www.lmariemeehan.com" target="_blank">Laura Meehan</a>
         <div className="github-site">
-        <span className="github-icon"><ion-icon className="logo-github"></ion-icon></span>
+        <span className="github-icon"><ion-icon className="logo-github" size="large"></ion-icon></span>
           <a className="github" href="https://github.com/lmariemeehan" target="_blank">GitHub</a>
         </div>
       </nav>
