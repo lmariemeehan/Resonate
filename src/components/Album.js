@@ -115,8 +115,8 @@ class Album extends Component {
     this.setState({volume: newVolume});
   }
 
-   onMouseEnter(index){
-    this.setState({isHovered: index});
+	onMouseEnter(index){
+	  this.setState({isHovered: index});
   }
 
   onMouseLeave(){

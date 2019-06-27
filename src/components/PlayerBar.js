@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import './PlayerBar.css'
+import '../styles/PlayerBar.css';
 
 class PlayerBar extends Component {
 	render () {

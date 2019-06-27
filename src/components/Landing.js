@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'bootstrap';
-import './Landing.css';
+import '../styles/Landing.css';
 import { Navbar } from 'bootstrap';
 
 const Landing = () => (

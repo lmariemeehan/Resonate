@@ -1,0 +1,62 @@
+
+ /********************   LIBRARY PAGE   ********************/
+
+html {
+  height: 100%;
+}
+
+.library {
+  background-color: #e056fd;
+  background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
+  height: 100vh;
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: scroll;
+}
+
+.album-links{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-images{
+  box-shadow: -18px 19px 50px -5px #050405;
+  margin: 25px;
+  height: 200px;
+  width: 250px;
+  border-radius: 4px;
+}
+
+.album-links img:hover {
+  opacity: 0.25;
+  transition: .2s;
+}
+
+.album_title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.album-links a:link {
+  font-size: 14px;
+  color: #b697df;
+  text-decoration: none;
+  letter-spacing: .02em;
+  margin-bottom: 65px;
+}
+
+.album-links a:visited {
+  color: #b697df;
+}
+
+.album-links a:hover {
+  color: #fff;
+}

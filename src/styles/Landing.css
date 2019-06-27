@@ -1,0 +1,143 @@
+/********************   LANDING PAGE   ********************/
+
+.hero-image {
+	background-image: url('/assets/images/landing_page/samuele-errico-piccarini-197299-unsplash.jpg');
+  background-color: #000;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*
+  min-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  */
+	color: #e7ecef;
+	text-shadow: #274c77 2px 2px;
+  padding-top: 10px;
+  -webkit-filter: opacity(.9);
+  filter: opacity(.9);
+}
+
+/*   ANCHOR ANIMATION LINK TO LIBRARY   */
+
+.hero-title a::before,
+.hero-title a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.hero-title a::before {
+  color: #fff;
+	margin-right: 10px;
+	content: '[ ';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.hero-title a::after {
+  color: #fff;
+	margin-left: 10px;
+	content: ' ]';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.hero-title a:hover::before,
+.hero-title a:hover::after,
+.hero-title a:focus::before,
+.hero-title a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.hero-title a {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 75px;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-shadow:
+    0 0  5px #6E6685,
+    0 0  10px #6E6685,
+    0 0  15px #6E6685,
+    0 0  20px #fff,
+    0 0  35px #fff,
+    0 0  40px #fff,
+    0 0  60px #fff,
+    0 0  90px #fff;
+}
+
+/*   Selling-points landing page section   */
+
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 50px;
+}
+
+.sellingpoints {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #393A4A;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 33%;
+  border-radius: 6px;
+  box-shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+  width: 400px;
+  height: 400px;
+  flex-shrink: 1;
+  margin-top: -30px;
+  -webkit-filter: opacity(.9); /* Safari 6.0 - 9.0 */
+    filter: opacity(.9);
+  border-radius: 6px;
+  box-shadow:
+    0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.point ion-icon {
+  font-size: 72px;
+  color: #6E6685;
+}
+
+.point-description {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
