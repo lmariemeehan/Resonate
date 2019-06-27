@@ -1,52 +1,32 @@
-/*
-table {
-
-	margin: auto;
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 100px;
-    margin-top: 50px;
-}
-
-td {
-	border-bottom: 1px solid #ddd;
-}
-
-playbar{
-	margin-top: 500px;
-	background-color: light-blue;
-}
-*/
 
  /********************   ALBUM PAGE   ********************/
 
 .album-page {
   background-color: #e056fd;
   background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  color: #fff;
+  display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100vh;
 }
 
 .album-cover-art img{
   box-shadow: -18px 19px 50px -5px #050405;
-  margin-left: 350px;
-  margin-bottom: 35px;
   width: 360px;
   height: 360px;
-  grid-column: 2 / 3;
-  justify-self: end;
+	border-radius: 6px;
 }
 
 .album-info {
-/*  margin-top: 40px;  */
-  grid-area: 1/3/3/4;
-  justify-self: start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #release-info {
-  position: relative;
   font-family: sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -70,10 +50,12 @@ playbar{
 }
 
 .song-list {
-  grid-area: 2/2/3/3;
-  margin-left: 40px;
-  height: 20px;
-  width: 100%;
+	display: flex;
+
+}
+
+td {
+	border-bottom: 1px solid #9B919E;
 }
 
 .song {
@@ -91,29 +73,4 @@ playbar{
 
 .pause-icon {
   color: #fff;
-}
-
-.playerbar {
-  grid-area: 3/1/4/5;
-  padding-right: 100px;
-}
-
-#play-pause {
-  background: transparent;
-  border: 0;
-  font-size: 40px;
-}
-
-#previous {
-  background: transparent;
-  color: #fff;
-  border: 0;
-  font-size: 40px;
-}
-
-#next {
-  background: transparent;
-  color: #fff;
-  border: 0;
-  font-size: 40px;
 }

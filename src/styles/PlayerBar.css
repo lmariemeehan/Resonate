@@ -4,12 +4,34 @@
     margin-right: 150px;
     margin-left: 80px;
 }
-/*
-.row {
-	background: linear-gradient(to bottom, #666699 0%, #ff99cc 100%);
-}
-*/
+
 #buttons {
 	font-size: 33px;
 	padding: 10px;
+}
+
+.playerbar {
+  grid-area: 3/1/4/5;
+  padding-right: 100px;
+	 width: 100%;
+}
+
+#play-pause {
+  background: transparent;
+  border: 0;
+  font-size: 40px;
+}
+
+#previous {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  font-size: 40px;
+}
+
+#next {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  font-size: 40px;
 }

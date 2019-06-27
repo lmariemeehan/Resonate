@@ -10,7 +10,7 @@ const Landing = () => (
       <h1 className="hero-title"><a href="/library">Turn the music <span>up!</span></a></h1>
     </div>
 
-    <h2>Resonate.</h2>
+    <h2 class="app-name">Resonate.</h2>
 
     <div className="sellingpoints">
       <div className="point">
