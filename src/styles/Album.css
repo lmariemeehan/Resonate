@@ -7,7 +7,7 @@
   color: #fff;
   display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	height: 100vh;
 }
@@ -25,6 +25,16 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+}
+
+#album-title {
+	font-size: 30px;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.artist {
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
 }
 
 #release-info {
@@ -50,14 +60,13 @@
   }
 }
 
-tbody {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
 .song {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
   font-size: 20px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .song:hover {

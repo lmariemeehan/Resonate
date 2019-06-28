@@ -40,9 +40,14 @@ html {
   transition: .2s;
 }
 
-.album_title {
-  font-weight: bold;
+.album-title {
   font-size: 17px;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+}
+
+.album-artist {
+  font-family: 'Raleway', sans-serif;
 }
 
 .album-links a:link {
