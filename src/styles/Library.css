@@ -25,6 +25,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .album-images{
@@ -42,12 +43,11 @@ html {
 
 .album-title {
   font-size: 17px;
-  font-family: 'Fjalla One', sans-serif;
   letter-spacing: 1px;
 }
 
 .album-artist {
-  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
 
 .album-links a:link {
