@@ -12,17 +12,18 @@
 	height: 100vh;
 }
 
-.album-cover-art img{
+.album-info img{
   box-shadow: -18px 19px 50px -5px #050405;
   width: 360px;
   height: 360px;
 	border-radius: 6px;
+	margin-bottom: 26px;
 }
 
 .album-info {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -49,18 +50,14 @@
   }
 }
 
-.song-list {
+tbody {
 	display: flex;
-
-}
-
-td {
-	border-bottom: 1px solid #9B919E;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .song {
-  font-size: 25px;
-  height: 25px;
+  font-size: 20px;
 }
 
 .song:hover {
