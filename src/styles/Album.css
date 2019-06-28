@@ -6,7 +6,7 @@
   background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
   color: #fff;
   display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: flex-start;
 	flex-wrap: wrap;
 	height: 100vh;

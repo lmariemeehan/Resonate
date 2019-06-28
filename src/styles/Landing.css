@@ -95,22 +95,24 @@
 
 .sellingpoints {
   display: flex;
-  height: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #393A4A;
+	height: 80vh;
 }
 
 .point {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  width: 33%;
+  width: 20%;
+	padding: 0 20px;
+	margin: 20px;
+	margin-bottom: auto;
   border-radius: 6px;
   box-shadow:
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -119,10 +121,10 @@
 }
 
 .card-img-top {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   flex-shrink: 1;
-  margin-top: -30px;
+	margin-bottom: 20px;
   -webkit-filter: opacity(.9); /* Safari 6.0 - 9.0 */
     filter: opacity(.9);
   border-radius: 6px;
