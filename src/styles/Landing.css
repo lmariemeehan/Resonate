@@ -48,7 +48,6 @@ html {
 }
 
 /*   Selling-points section   */
-
 .top-img {
 	height: 200px;
   width: 250px;
@@ -75,7 +74,6 @@ html {
 		0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-/*    Icons    */
 .container-fluid {
 	background-color: #393A4A;
 	padding: 2.5em 7em 5em 7em;
@@ -96,12 +94,11 @@ html {
 	margin: 10px 0px 20px;
 }
 
+/*    Icons    */
 .col ion-icon {
-  font-size: 50px;
-	height: 100px;
-	width: 250px;
+	height: 75px;
+	width: 225px;
 	padding: 10px 0;
-
 }
 
 .music-note {

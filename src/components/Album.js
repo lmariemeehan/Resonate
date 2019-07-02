@@ -166,20 +166,20 @@ class Album extends Component {
 		      </tbody>
         </table>
 
-		<div className="playerbar">
-      <PlayerBar
-      	isPlaying={this.state.isPlaying}
-      	currentSong={this.state.currentSong}
-      	currentTime={this.audioElement.currentTime}
-        formatTime={this.formatTime}
-      	duration={this.audioElement.duration}
-        volume={this.audioElement.volume}
-      	handleSongClick={() => this.handleSongClick(this.state.currentSong)}
-      	handlePrevClick={() => this.handlePrevClick()}
-      	handleNextClick={() => this.handleNextClick()}
-      	handleTimeChange={(e) => this.handleTimeChange(e)}
-        handleVolumeChange={(e) => this.handleVolumeChange(e)}
-      	/>
+				<div className="playerbar">
+		      <PlayerBar
+		      	isPlaying={this.state.isPlaying}
+		      	currentSong={this.state.currentSong}
+		      	currentTime={this.audioElement.currentTime}
+		        formatTime={this.formatTime}
+		      	duration={this.audioElement.duration}
+		        volume={this.audioElement.volume}
+		      	handleSongClick={() => this.handleSongClick(this.state.currentSong)}
+		      	handlePrevClick={() => this.handlePrevClick()}
+		      	handleNextClick={() => this.handleNextClick()}
+		      	handleTimeChange={(e) => this.handleTimeChange(e)}
+		        handleVolumeChange={(e) => this.handleVolumeChange(e)}
+		      	/>
 				</div>
 
 			</section>
