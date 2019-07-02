@@ -1,4 +1,7 @@
 /********************   LANDING PAGE   ********************/
+html {
+  height: 100%;
+}
 
 .hero-image {
 	background-image: url('/assets/images/landing_page/samuele-errico-piccarini-197299-unsplash.jpg');
@@ -100,7 +103,7 @@
   justify-content: center;
   align-items: center;
   background-color: #393A4A;
-	height: 80vh;
+	height: 60vh;
 }
 
 .point {
@@ -121,8 +124,7 @@
 }
 
 .card-img-top {
-  width: 200px;
-  height: 200px;
+  width: 100%;
   flex-shrink: 1;
 	margin-bottom: 20px;
   -webkit-filter: opacity(.9); /* Safari 6.0 - 9.0 */

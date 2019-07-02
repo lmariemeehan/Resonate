@@ -10,12 +10,12 @@ const Landing = () => (
       <h1 className="hero-title"><a href="/library">Turn the music <span>up!</span></a></h1>
     </div>
 
-    <h2 class="app-name">Resonate.</h2>
+    <h2 className="app-name">Resonate.</h2>
 
     <div className="sellingpoints">
       <div className="point">
         <img src="/assets/images/landing_page/vinyl-records-945396_1920.jpg" className="card-img-top" alt="..." />
-          <h4><span className="music-note"><ion-icon name="ios-musical-notes"></ion-icon></span></h4>
+          <span className="music-note"><ion-icon name="ios-musical-notes"></ion-icon></span>
           <h5 className="point-title">Choose your music</h5>
           <p className="point-description">The world is full of music. Why should you have to listen to music that someone else chose?</p>
       </div>

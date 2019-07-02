@@ -21,7 +21,7 @@ import '../styles/Library.css';
                <img className="album-images" src={album.albumCover} alt={album.title} />
                <div className="album-title">{album.title}</div>
                <div className="album-artist">{album.artist}</div>
-               <div>{album.songs.length} songs</div>
+               <div className="album-songs">{album.songs.length} songs</div>
                 </Link>
           )
         }
