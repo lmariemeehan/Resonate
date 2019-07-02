@@ -21,13 +21,13 @@ const Landing = () => (
       </div>
       <div className="point">
         <img src="/assets/images/landing_page/bodybuilder-925770_1920.jpg" className="card-img-top" alt="..." />
-          <h4><span className="streaming-icon"><ion-icon name="ios-radio"></ion-icon></span></h4>
+          <span className="streaming-icon"><ion-icon name="ios-radio"></ion-icon></span>
           <h5 className="point-title">Unlimited, streaming, ad-free</h5>
           <p className="point-description">No arbitrary limits. No distractions.</p>
       </div>
       <div className="point">
         <img src="/assets/images/landing_page/mobile_adults.jpg" className="card-img-top" alt="..." />
-          <h4><span className="phone-icon"><ion-icon name="phone-portrait"></ion-icon></span></h4>
+          <span className="phone-icon"><ion-icon name="phone-portrait"></ion-icon></span>
           <h5 className="point-title">Mobile enabled</h5>
           <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
       </div>
