@@ -32,7 +32,7 @@
 	font-family: 'Fjalla One', sans-serif;
 }
 
-.artist {
+#artist {
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 }
@@ -45,7 +45,7 @@
   background: linear-gradient(90deg, #000, #fff, #000);
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: animate 5s linear infinite;
+  animation: animate 6s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
@@ -60,19 +60,20 @@
   }
 }
 
-.song {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: stretch;
+/*   Song List   */
+.table {
+  margin-top: 50px;
+  color: #9D9EAF;
   font-size: 20px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 .song:hover {
-  background-color: #9B919E;
+  color: #FFF;
+  font-size: 22px;
 }
 
+/*   PlayerBar Section  */
 .play-icon {
   color: #fff;
 }

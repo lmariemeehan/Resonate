@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+/* import { table, tableHover, tr, td } from 'bootstrap'; */
 import '../styles/Album.css';
 
 class Album extends Component {
@@ -145,16 +146,11 @@ class Album extends Component {
 				<div className="album-info">
 				  <img src={this.state.album.albumCover} alt={this.state.album.title}/>
 	        <h1 id="album-title">{this.state.album.title}</h1>
-	        <h2 className="artist">{this.state.album.artist}</h2>
+	        <h2 id="artist">{this.state.album.artist}</h2>
 	        <div id="release-info">{this.state.album.releaseInfo}</div>
 	      </div>
 
-       	<table className="song-list">
-					<colgroup>
-          	<col id="song-number-column" />
-            <col id="song-title-column" />
-            <col id="song-duration-column" />
-          </colgroup>
+       	<table className="table">
 	        <tbody>
 	          {this.state.album.songs.map( (song, index) =>
 		          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
