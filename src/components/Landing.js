@@ -7,7 +7,7 @@ const Landing = () => (
   <section className="landing">
 
     <div className="hero-image">
-      <h1 className="hero-title"><a href="/library">Turn the music <span>up!</span></a></h1>
+      <h1 className="hero-title"><a href="/library">Turn the music up!</a></h1>
     </div>
 
     <h2 className="app-name">Resonate.</h2>
