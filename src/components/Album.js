@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-/* import { table, tableHover, tr, td } from 'bootstrap'; */
 import '../styles/Album.css';
 
 class Album extends Component {

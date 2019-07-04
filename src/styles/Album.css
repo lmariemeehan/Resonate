@@ -6,16 +6,17 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 	height: 100vh;
+  overflow-x:visible;
 }
 
 .album-info img{
   box-shadow: -18px 19px 50px -5px #050405;
-  width: 360px;
-  height: 360px;
+  width: 320px;
+  height: 300px;
 	border-radius: 6px;
 	margin-bottom: 26px;
 }
@@ -62,22 +63,13 @@
 
 /*   Song List   */
 .table {
-  margin-top: 50px;
+  margin: 50px 0px 50px 0px;
+  width: 500px;
   color: #9D9EAF;
-  font-size: 20px;
+  font-size: 16px;
 	font-family: 'Fjalla One', sans-serif;
 }
 
 .song:hover {
   color: #FFF;
-  font-size: 22px;
-}
-
-/*   PlayerBar Section  */
-.play-icon {
-  color: #fff;
-}
-
-.pause-icon {
-  color: #fff;
 }

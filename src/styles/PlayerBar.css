@@ -1,36 +1,40 @@
-
-#buttons {
-	font-size: 33px;
-	padding: 10px;
-}
-
 .playerbar {
 	bottom: 0;
 	position: fixed;
 	width: 100%;
 	background-color: #371c5b;
+}
 
+#buttons {
+	margin: auto;
+	padding: 10px;
+}
+
+#buttons button {
+	font-size: 25px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	color: hsla(0, 0%, 100%, 0.5);
 }
 
 #play-pause {
-  background: transparent;
-  border: 0;
-  font-size: 40px;
-	outline: 0;
+  font-size: 30px;
+	margin: 0.8rem 1rem 0;
 }
 
-#previous {
-  background: transparent;
-  color: #fff;
-  border: 0;
-  font-size: 40px;
-	outline: 0;
+#buttons button:hover {
+	color: #fff;
 }
 
-#next {
-  background: transparent;
-  color: #fff;
-  border: 0;
-  font-size: 40px;
-	outline: 0;
+#time-control {padding: 15px;}
+#time-control, #volume-control {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: hsla(0, 0%, 100%, 0.5);
+}
+
+#volume-control .icon {
+	padding: 15px;
 }
