@@ -27,17 +27,41 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+.container {
+  position: relative;
+}
+
 .album-images{
-  box-shadow: -18px 19px 50px -5px #050405;
   margin: 25px;
   height: 200px;
   width: 250px;
+  transition: .5s ease;
+  backface-visibility: hidden;
   border-radius: 4px;
+  box-shadow: -18px 19px 50px -5px #050405;
 }
 
-.album-links img:hover {
-  opacity: 0.25;
-  transition: .2s;
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover img {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 0.9;
+}
+
+.play-album-icon {
+  color: #fff;
+  font-size: 48px;
 }
 
 .album-title {

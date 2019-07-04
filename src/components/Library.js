@@ -18,11 +18,16 @@ import '../styles/Library.css';
         {
           this.state.albums.map( (album, index) =>
               <Link to={`/album/${album.slug}`} key={index}>
-               <img className="album-images" src={album.albumCover} alt={album.title} />
-               <div className="album-title">{album.title}</div>
-               <div className="album-artist">{album.artist}</div>
-               <div className="album-songs">{album.songs.length} songs</div>
-                </Link>
+                <div className="container">
+                  <img className="album-images" src={album.albumCover} alt={album.title} />
+                  <div className="middle">
+                    <span className="play-album-icon"><ion-icon name="play"></ion-icon></span>
+                  </div>
+                </div>
+                <div className="album-title">{album.title}</div>
+                <div className="album-artist">{album.artist}</div>
+                <div className="album-songs">{album.songs.length} songs</div>
+              </Link>
           )
         }
         </div>
