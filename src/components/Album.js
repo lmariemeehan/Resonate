@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/Album.css';
 
 class Album extends Component {
@@ -100,7 +99,7 @@ class Album extends Component {
 	}
 
   formatTime(sec) {
-     if( sec === NaN ) {
+     if( sec === isNaN ) {
      return '-:--';
     }
 
@@ -142,6 +141,7 @@ class Album extends Component {
      return (
 			<section className="album-page">
 
+				<section className="content">
 				<div className="album-info">
 				  <img src={this.state.album.albumCover} alt={this.state.album.title}/>
 	        <h1 id="album-title">{this.state.album.title}</h1>
@@ -160,8 +160,9 @@ class Album extends Component {
 	          )}
 		      </tbody>
         </table>
+				</section>
 
-				<div className="playerbar">
+				<div className="player-bar">
 		      <PlayerBar
 		      	isPlaying={this.state.isPlaying}
 		      	currentSong={this.state.currentSong}

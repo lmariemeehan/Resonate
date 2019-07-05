@@ -75,6 +75,7 @@ html {
 
 .album-links a:link {
   font-size: 14px;
+  line-height: 22px;
   color: #b697df;
   text-decoration: none;
   letter-spacing: .02em;

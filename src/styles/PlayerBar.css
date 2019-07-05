@@ -1,47 +1,36 @@
-.playerbar {
+.player-bar {
+	left: 0;
 	bottom: 0;
-	position: fixed;
 	width: 100%;
+	position: fixed;
 	max-height: 100px;
 	background-color: #371c5b;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
 
 #buttons {
-	margin: auto;
-	padding: 10px;
+
 }
 
 #buttons button {
-	font-size: 25px;
+	font-size: 1rem;
 	border: 0;
 	outline: 0;
 	background: transparent;
-	color: hsla(0, 0%, 100%, 0.5);
+	color: hsla(0, 0%, 100%, 0.6);
 }
 
-#play-pause {
-  font-size: 30px;
-	margin: 0.8rem 1rem 0;
+#buttons #play-pause {
+  font-size: 1.5rem;
+	color: hsla(0, 0%, 100%, 0.8);
 }
 
-#buttons button:hover {
+#buttons button:hover, #buttons #play-pause:hover {
 	color: #fff;
 }
 
 #time-control {
-	padding: 15px;
 }
 
 #time-control, #volume-control {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	color: hsla(0, 0%, 100%, 0.5);
-}
-
-#volume-control .icon {
-	padding: 15px;
 }

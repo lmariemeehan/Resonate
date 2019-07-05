@@ -1,7 +1,5 @@
 import React from 'react';
-import { Carousel } from 'bootstrap';
 import '../styles/Landing.css';
-import { navbar, containerFluid, row, col } from 'bootstrap';
 
 const Landing = () => (
   <section className="landing">

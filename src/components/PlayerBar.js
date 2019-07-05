@@ -32,6 +32,7 @@ class PlayerBar extends Component {
 					</button>
 				</section>
 
+
 				<section id="volume-control">
 					<div className="icon ion-volume-low"></div>
 					<input

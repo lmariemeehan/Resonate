@@ -10,7 +10,6 @@
 	align-items: center;
 	flex-wrap: wrap;
 	height: 100vh;
-  overflow-x:visible;
 }
 
 .album-info img{
@@ -39,7 +38,7 @@
 }
 
 #release-info {
-  font-family: sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   overflow: hidden;
@@ -63,7 +62,7 @@
 
 /*   Song List   */
 .table {
-  margin: 50px 0px 50px 0px;
+  margin-top: 50px;
   width: 500px;
   color: #9D9EAF;
   font-size: 16px;
