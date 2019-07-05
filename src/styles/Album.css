@@ -13,11 +13,6 @@
 
 .content {
   flex: 1;
-  flex-grow: 5;
-}
-
-.player-bar {
-  flex-grow: 1;
 }
 
 .album-info img{
