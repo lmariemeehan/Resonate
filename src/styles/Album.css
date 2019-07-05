@@ -6,10 +6,18 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
-	height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  flex-grow: 5;
+}
+
+.player-bar {
+  flex-grow: 1;
 }
 
 .album-info img{
@@ -71,4 +79,8 @@
 
 .song:hover {
   color: #FFF;
+}
+
+.song-title {
+  letter-spacing: 3px;
 }

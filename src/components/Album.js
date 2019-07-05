@@ -142,24 +142,24 @@ class Album extends Component {
 			<section className="album-page">
 
 				<section className="content">
-				<div className="album-info">
-				  <img src={this.state.album.albumCover} alt={this.state.album.title}/>
-	        <h1 id="album-title">{this.state.album.title}</h1>
-	        <h2 id="artist">{this.state.album.artist}</h2>
-	        <div id="release-info">{this.state.album.releaseInfo}</div>
-	      </div>
+					<div className="album-info">
+					  <img src={this.state.album.albumCover} alt={this.state.album.title}/>
+		        <h1 id="album-title">{this.state.album.title}</h1>
+		        <h2 id="artist">{this.state.album.artist}</h2>
+		        <div id="release-info">{this.state.album.releaseInfo}</div>
+		      </div>
 
-       	<table className="table">
-	        <tbody>
-	          {this.state.album.songs.map( (song, index) =>
-		          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
-	            <td className="song-number"> {this.handleHoverButton(song, index)} </td>
-	            <td className="song-title"> {song.title} </td>
-	            <td className="song-duration"> {this.formatTime(song.duration)} </td>
-	            </tr>
-	          )}
-		      </tbody>
-        </table>
+	       	<table className="table">
+		        <tbody>
+		          {this.state.album.songs.map( (song, index) =>
+			          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
+		            <td className="song-number"> {this.handleHoverButton(song, index)} </td>
+		            <td className="song-title"> {song.title} </td>
+		            <td className="song-duration"> {this.formatTime(song.duration)} </td>
+		            </tr>
+		          )}
+			      </tbody>
+	        </table>
 				</section>
 
 				<div className="player-bar">
