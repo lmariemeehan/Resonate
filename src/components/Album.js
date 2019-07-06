@@ -99,7 +99,7 @@ class Album extends Component {
 	}
 
   formatTime(sec) {
-     if( sec === isNaN ) {
+     if( typeof (sec/1) !== "number" ) {
      return '-:--';
     }
 
