@@ -5,18 +5,37 @@
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-box-pack: justify;
-	justify-content:space-between;
+	justify-content: space-between;
 	background-color: #371c5b;
 	width: 100%;
-	height: 80px;
+	height: auto;
 	padding: 0 16px;
 	flex-wrap: wrap;
+}
+
+#mini-album {
+	display: flex;
+	align-items: center;
+}
+
+#player-album-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 15px 0px 15px 15px;
+}
+
+#play-time {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #buttons {
 	display: flex;
 	align-items: center;
-	transform: translate(-30px);
 }
 
 #buttons button {
@@ -39,6 +58,7 @@
 
 input[type=range] {
 	margin: 0px 14px;
+	width: 200px;
 }
 
 #time-control {

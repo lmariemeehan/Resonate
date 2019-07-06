@@ -6,6 +6,27 @@ class PlayerBar extends Component {
 		return (
 			<section className="player-bar">
 
+				<section id="mini-album">
+					<img src={this.props.album.albumCover} width="60px" height="60px"/>
+						<div id="player-album-info">
+							<p>{this.props.album.artist}</p>
+							<p>{this.props.currentSong.title}</p>
+						</div>
+				</section>
+
+			<section id="play-time">
+				<section id="buttons">
+					<button id="previous" onClick={this.props.handlePrevClick}>
+						<span className="rewind"><ion-icon name="skip-backward"></ion-icon></span>
+					</button>
+					<button id="play-pause" onClick={this.props.handleSongClick}>
+						{ this.props.isPlaying ? <span className="pause-icon"><ion-icon name="pause"></ion-icon></span> : <span className="play-icon"><ion-icon name="play"></ion-icon></span>}
+					</button>
+					<button id="next" onClick={this.props.handleNextClick}>
+						<ion-icon name="skip-forward"></ion-icon>
+					</button>
+				</section>
+
 				<section id="time-control">
 					<div className="current-time">{this.props.formatTime( this.props.currentTime )}</div>
 					<input
@@ -19,22 +40,7 @@ class PlayerBar extends Component {
 					/>
 					<div className="total-time">{this.props.formatTime(this.props.duration)}</div>
 				</section>
-
-				<section id="buttons">
-					<button id="previous" onClick={this.props.handlePrevClick}>
-						<span className="rewind"><ion-icon name="skip-backward"></ion-icon></span>
-					</button>
-					<button id="play-pause" onClick={this.props.handleSongClick}>
-						{ this.props.isPlaying ? <span className="pause-icon"><ion-icon name="pause"></ion-icon></span> : <span className="play-icon"><ion-icon name="play"></ion-icon></span>}
-					</button>
-					<button id="next" onClick={this.props.handleNextClick}>
-						<ion-icon name="skip-forward"></ion-icon>
-					</button>
-					<img src={this.props.album.albumCover} width="35px" height="35px"/>
-					<p>{this.props.album.artist}</p>
-					<p>{this.props.currentSong.title}</p>
-				</section>
-
+			</section>
 
 				<section id="volume-control">
 					<div className="icon ion-volume-low"></div>
@@ -47,7 +53,7 @@ class PlayerBar extends Component {
 						   step="0.01"
 						   onChange={this.props.handleVolumeChange}
 					/>
-					<div className="icon ion-volume-high">{this.props.volume}</div>
+					<div className="icon ion-volume-high"></div>
 				</section>
 
 			</section>
