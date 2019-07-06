@@ -30,6 +30,9 @@ class PlayerBar extends Component {
 					<button id="next" onClick={this.props.handleNextClick}>
 						<ion-icon name="skip-forward"></ion-icon>
 					</button>
+					<img src={this.props.album.albumCover} width="35px" height="35px"/>
+					<p>{this.props.album.artist}</p>
+					<p>{this.props.currentSong.title}</p>
 				</section>
 
 
