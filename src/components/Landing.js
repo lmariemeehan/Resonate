@@ -14,19 +14,19 @@ const Landing = () => (
       <div className="row">
         <div className="col">
           <h3 className="point-title">Choose your music</h3>
-          <img src="/assets/images/landing_page/vinyl-records-945396_1920.jpg" className="top-img" alt="..." />
+          <img src="/assets/images/landing_page/vinyl-records-945396_1920.jpg" className="img-fluid" alt="Responsive image" />
           <p className="point-description">The world is full of music. Why should you have to listen to music that someone else chose?</p>
           <span className="music-note"><ion-icon name="ios-musical-notes"></ion-icon></span>
         </div>
         <div className="col">
           <h3 className="point-title">Unlimited, streaming, ad-free</h3>
-          <img src="/assets/images/landing_page/bodybuilder-925770_1920.jpg" className="top-middle-img" alt="..." />
+          <img src="/assets/images/landing_page/bodybuilder-925770_1920.jpg" className="img-fluid" alt="Responsive image" />
           <p className="point-description">No arbitrary limits. No distractions.</p>
           <span className="streaming-icon"><ion-icon name="ios-radio"></ion-icon></span>
           </div>
         <div className="col">
           <h3 className="point-title">Mobile enabled</h3>
-          <img src="/assets/images/landing_page/mobile_adults.jpg" className="top-img" alt="..." />
+          <img src="/assets/images/landing_page/mobile_adults.jpg" className="img-fluid" alt="Responsive image" />
           <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
           <span className="phone-icon"><ion-icon name="phone-portrait"></ion-icon></span>
         </div>

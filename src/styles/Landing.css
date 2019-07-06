@@ -48,9 +48,10 @@ html {
 }
 
 /*   Selling-points section   */
-.top-img {
-	height: 200px;
-  width: 250px;
+.img-fluid {
+	height: auto;
+  width: 300px;
+  max-width: 100%;
 	margin: 20px;
   -webkit-filter: opacity(.9); /* Safari 6.0 - 9.0 */
     filter: opacity(.9);
