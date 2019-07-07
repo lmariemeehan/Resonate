@@ -67,13 +67,14 @@
 .table {
   margin-top: 50px;
   width: 500px;
-  color: #9D9EAF;
+  color: #FCFBFB;;
   font-size: 16px;
 	font-family: 'Fjalla One', sans-serif;
 }
 
 .song:hover {
   color: #FFF;
+  background-color: #25133d;
 }
 
 .song-title {
