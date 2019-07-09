@@ -16,6 +16,7 @@
 #mini-album {
 	display: flex;
 	align-items: center;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 #player-album-info {
@@ -85,7 +86,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 18px;
   width: 40px;
   border-radius: 12px;
-  background: #9FCE7F;
+  background: #FCFBFB;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -3px;
