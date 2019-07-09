@@ -85,7 +85,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 20px;
   width: 40px;
   border-radius: 12px;
-  background: #F36D5E;
+  background: #9FCE7F;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -3px;
@@ -120,7 +120,7 @@ input[type=range]::-ms-thumb {
   height: 20px;
   width: 40px;
   border-radius: 12px;
-  background: #F36D5E;
+  background: #9FCE7F;
   cursor: pointer;
 }
 
