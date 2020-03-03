@@ -7,7 +7,6 @@
 
 .album-info img{
   box-shadow: -18px 19px 50px -5px #050405;
-	border-radius: 6px;
 }
 
 #album-title {
@@ -48,6 +47,10 @@
   color: #FCFBFB;
   font-size: 1rem;
 	font-family: 'Fjalla One', sans-serif;
+}
+
+.table th {
+  font-weight: bold;
 }
 
 .song:hover {

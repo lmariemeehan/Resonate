@@ -21,7 +21,7 @@ import '../styles/Library.css';
                 <div className="container">
                   <img className="album-images" src={album.albumCover} alt={album.title} />
                   <div className="middle">
-                    <span className="play-album-icon"><ion-icon name="play"></ion-icon></span>
+                    <span className="play-album-icon"><ion-icon name="play-sharp"></ion-icon></span>
                   </div>
                 </div>
                 <div className="album-title">{album.title}</div>

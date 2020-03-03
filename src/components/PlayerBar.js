@@ -4,12 +4,13 @@ import '../styles/PlayerBar.css';
 class PlayerBar extends Component {
 	render () {
 		return (
-			<div className="mx-auto">
+			<div className="container">
 
 					<section className="media text-white" id="mini-album">
-						<img src={this.props.album.albumCover} width="60" height="60" alt="mini album cover"/>
+						<img src={this.props.album.albumCover} width="60" height="60"
+							alt="mini album cover" className="mr-2"/>
 							<div className="media-body">
-								<p className="mb-0">{this.props.album.artist}</p>
+								<p className="text-uppercase mb-1">{this.props.album.artist}</p>
 								<p>{this.props.currentSong.title}</p>
 							</div>
 					</section>
@@ -23,7 +24,7 @@ class PlayerBar extends Component {
 							<button id="play-pause" onClick={this.props.handleSongClick}>
 								{ this.props.isPlaying ?
 									<ion-icon name="pause"></ion-icon> :
-									<ion-icon name="play"></ion-icon>
+									<ion-icon name="play-sharp"></ion-icon>
 								}
 							</button>
 							<button id="next" onClick={this.props.handleNextClick}>

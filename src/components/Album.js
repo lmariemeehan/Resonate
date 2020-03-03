@@ -106,7 +106,7 @@ class Album extends Component {
    const minutes = Math.floor(sec / 60);
    const seconds = Math.floor(sec -  (minutes * 60));
    if (seconds < 10) {return minutes + " : " + "0" + seconds;}
-   return minutes + " : " + seconds;
+   return minutes + ":" + seconds;
   }
 
   handleVolumeChange(e) {
@@ -127,11 +127,11 @@ class Album extends Component {
   	const isSameSong = this.state.currentSong === song;
 
     	if (!this.state.isPlaying && isSameSong) {
-      return <span className="play-icon"><ion-icon name="play"></ion-icon></span>;
+      return <span className="play-icon"><ion-icon name="play-sharp"></ion-icon></span>;
      } else if (isSameSong && this.state.isPlaying) {
-      return <span className="pause-icon"><ion-icon name="pause"></ion-icon></span>;
+      return <span className="pause-icon"><ion-icon name="pause-sharp"></ion-icon></span>;
      } else if (index === this.state.isHovered) {
-      return <span className="play-icon"><ion-icon name="play"></ion-icon></span>;
+      return <span className="play-icon"><ion-icon name="play-sharp"></ion-icon></span>;
      } else {
       return <span>{index + 1}</span>;
      }
@@ -144,7 +144,7 @@ class Album extends Component {
 				<section className="row py-5">
 						<div className="col content text-white">
 							<div className="album-info text-center">
-							  <img src={this.state.album.albumCover} alt={this.state.album.title} height="280" width="320"/>
+							  <img src={this.state.album.albumCover} alt={this.state.album.title} height="280" width="320"className="rounded"/>
 				        <h1 className="mt-2" id="album-title">{this.state.album.title}</h1>
 				        <h2 id="artist">{this.state.album.artist}</h2>
 				        <div id="release-info">{this.state.album.releaseInfo}</div>
@@ -165,7 +165,7 @@ class Album extends Component {
 						</div>
 					</section>
 
-				<section className="row fixed-bottom py-4" style={{backgroundColor: "#371c5b"}}>
+				<nav className="navbar fixed-bottom mt-5" style={{backgroundColor: "#371c5b"}}>
 		      <PlayerBar
 		      	isPlaying={this.state.isPlaying}
 		      	currentSong={this.state.currentSong}
@@ -180,7 +180,7 @@ class Album extends Component {
 		      	handleTimeChange={(e) => this.handleTimeChange(e)}
 		        handleVolumeChange={(e) => this.handleVolumeChange(e)}
 		      	/>
-				</section>
+				</nav>
 
 			</div>
      );

@@ -11,6 +11,7 @@ const Landing = () => (
     <h2 className="app-name">Resonate</h2>
 
     <div className="container-fluid pb-4">
+      <div className="selling-points">
       <div className="row py-5">
         <div className="col text-center">
           <h3 className="text-white my-4">Choose your music</h3>
@@ -30,6 +31,7 @@ const Landing = () => (
           <p className="point-description mt-2 mb-3">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
           <span className="phone-icon mb-3"><ion-icon name="phone-portrait-sharp"></ion-icon></span>
         </div>
+      </div>
       </div>
     </div>
 
