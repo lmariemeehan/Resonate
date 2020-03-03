@@ -9,12 +9,7 @@ body {
 }
 
 .navbar-custom a{
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-.navbar-custom a:hover{
-  color: #fff;
+  color: white;
   font-size: 1.5rem;
 }
 
@@ -28,7 +23,7 @@ body {
 }
 
 .navbar-icon {
-  margin-right: 7px;
+  margin: 0 5px -10px 0;
   font-size: 40px;
 }
 
@@ -43,7 +38,7 @@ body {
 }
 
 .navbar-custom a::before {
-  color: #fff;
+  color: white;
 	margin-right: 10px;
 	content: '[ ';
 	-webkit-transform: translateX(20px);
@@ -52,7 +47,7 @@ body {
 }
 
 .navbar-custom a::after {
-  color: #fff;
+  color: white;
 	margin-left: 10px;
 	content: ' ]';
 	-webkit-transform: translateX(-20px);
@@ -68,10 +63,4 @@ body {
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
-}
-
-/********************   Footer   ********************/
-.github-icon {
-  color: #fff;
-
 }
