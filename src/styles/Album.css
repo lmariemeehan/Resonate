@@ -1,33 +1,13 @@
  /********************   ALBUM PAGE   ********************/
-
+/*   Top Album Info   */
 .album-page {
   background-color: #e056fd;
   background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.content {
-  flex: 1;
 }
 
 .album-info img{
   box-shadow: -18px 19px 50px -5px #050405;
-  width: 320px;
-  height: 300px;
 	border-radius: 6px;
-	margin-bottom: 26px;
-}
-
-.album-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
 }
 
 #album-title {
@@ -63,17 +43,15 @@
   }
 }
 
-/*   Song List   */
+/*   Song List Table  */
 .table {
-  margin-top: 50px;
-  width: 500px;
-  color: #FCFBFB;;
-  font-size: 16px;
+  color: #FCFBFB;
+  font-size: 1rem;
 	font-family: 'Fjalla One', sans-serif;
 }
 
 .song:hover {
-  color: #FFF;
+  color: white;
   background-color: #25133d;
 }
 

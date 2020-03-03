@@ -10,30 +10,30 @@ const Landing = () => (
 
     <h2 className="app-name">Resonate</h2>
 
-    <div className="container-fluid">
-      <div className="row py-5 no-gutters">
+    <div className="container-fluid pb-4">
+      <div className="row py-5">
         <div className="col text-center">
-          <h3 className="point-title">Choose your music</h3>
-          <img src="/assets/images/landing_page/vinyl-records-945396_1920.jpg" className="img-fluid" alt="Girl looking through vinyl music" />
-          <p className="point-description">The world is full of music. Why should you have to listen to music that someone else chose?</p>
-          <span className="music-note"><ion-icon name="ios-musical-notes"></ion-icon></span>
+          <h3 className="text-white my-4">Choose your music</h3>
+          <img src="/assets/images/landing_page/vinyl-records-945396_1920.jpg" className="img-fluid my-3" alt="Girl looking through vinyl music" />
+          <p className="point-description mt-2 mb-3">The world is full of music. Why should you have to listen to music that someone else chose?</p>
+          <span className="music-note mb-3"><ion-icon name="ios-musical-notes"></ion-icon></span>
         </div>
         <div className="col text-center">
-          <h3 className="point-title">Unlimited, streaming, ad-free</h3>
-          <img src="/assets/images/landing_page/bodybuilder-925770_1920.jpg" className="img-fluid" alt="Man going for a run and listening to music with headphones" />
-          <p className="point-description">No arbitrary limits. No distractions.</p>
-          <span className="streaming-icon"><ion-icon name="ios-radio"></ion-icon></span>
+          <h3 className="text-white my-4">Unlimited, streaming, ad-free</h3>
+          <img src="/assets/images/landing_page/bodybuilder-925770_1920.jpg" className="img-fluid my-3" alt="Man going for a run and listening to music with headphones" />
+          <p className="point-description mt-2 mb-3">No arbitrary limits. No distractions.</p>
+          <span className="streaming-icon mb-3"><ion-icon name="ios-radio"></ion-icon></span>
           </div>
         <div className="col text-center">
-          <h3 className="point-title">Mobile enabled</h3>
-          <img src="/assets/images/landing_page/mobile_adults.jpg" className="img-fluid" alt="Using the phone on the go" />
-          <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
-          <span className="phone-icon"><ion-icon name="phone-portrait"></ion-icon></span>
+          <h3 className="text-white my-4">Mobile enabled</h3>
+          <img src="/assets/images/landing_page/mobile_adults.jpg" className="img-fluid my-3" alt="Using the phone on the go" />
+          <p className="point-description mt-2 mb-3">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
+          <span className="phone-icon mb-3"><ion-icon name="phone-portrait"></ion-icon></span>
         </div>
       </div>
     </div>
 
-    <nav className="navbar fixed-bottom navbar-custom">
+    <nav className="navbar fixed-bottom navbar-custom mt-5">
       <a className="portfolio-site" href="https://www.lmariemeehan.com" rel="noopener noreferrer" target="_blank">Laura Meehan</a>
       <div className="github-site">
         <a className="github" href="https://github.com/lmariemeehan" rel="noopener noreferrer" target="_blank">GitHub</a>

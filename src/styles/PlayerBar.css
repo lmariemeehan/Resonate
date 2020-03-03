@@ -1,21 +1,8 @@
 .player-bar {
-	display: flex;
-	align-items: center;
-	-webkit-box-align: center;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
 	background-color: #371c5b;
-	width: 100%;
-	height: auto;
-	padding: 0 16px;
-	flex-wrap: wrap;
 }
 
 #mini-album {
-	display: flex;
-	align-items: center;
 	font-family: 'Fjalla One', sans-serif;
 }
 
@@ -24,7 +11,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 15px 0px 15px 15px;
 }
 
 #play-time {
@@ -58,9 +44,9 @@
 }
 
 input[type=range] {
-	height: 12px;
+	height: 6px;
   -webkit-appearance: none;
-  margin: 10px 15px;
+  margin: 2px 15px;
   width: 100%;
 	border-radius: 6px;
 }
@@ -70,7 +56,7 @@ input[type=range]:focus {
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
+  width: 80%;
   height: 12px;
   cursor: pointer;
   animate: 0.2s;
@@ -92,7 +78,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -3px;
 }
 input[type=range]::-ms-track {
-  width: 100%;
+  width: 80%;
   height: 12px;
   cursor: pointer;
   animate: 0.2s;

@@ -131,7 +131,7 @@ class Album extends Component {
      } else if (isSameSong && this.state.isPlaying) {
       return <span className="pause-icon"><ion-icon name="pause"></ion-icon></span>;
      } else if (index === this.state.isHovered) {
-      return <ion-icon name="play"></ion-icon>;
+      return <span className="play-icon"><ion-icon name="play"></ion-icon></span>;
      } else {
       return <span>{index + 1}</span>;
      }
@@ -139,30 +139,34 @@ class Album extends Component {
 
    render() {
      return (
-			<section className="album-page">
+			<section className="container-fluid album-page">
 
-				<section className="content">
-					<div className="album-info">
-					  <img src={this.state.album.albumCover} alt={this.state.album.title}/>
-		        <h1 id="album-title">{this.state.album.title}</h1>
-		        <h2 id="artist">{this.state.album.artist}</h2>
-		        <div id="release-info">{this.state.album.releaseInfo}</div>
-		      </div>
+				<section className="content text-white">
+					<div className="row py-5">
+						<div className="col">
+							<div className="album-info text-center">
+							  <img src={this.state.album.albumCover} alt={this.state.album.title} height="280" width="320"/>
+				        <h1 className="mt-2" id="album-title">{this.state.album.title}</h1>
+				        <h2 id="artist">{this.state.album.artist}</h2>
+				        <div id="release-info">{this.state.album.releaseInfo}</div>
+				      </div>
 
-	       	<table className="table">
-		        <tbody>
-		          {this.state.album.songs.map( (song, index) =>
-			          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
-		            <td className="song-number"> {this.handleHoverButton(song, index)} </td>
-		            <td className="song-title"> {song.title} </td>
-		            <td className="song-duration"> {this.formatTime(song.duration)} </td>
-		            </tr>
-		          )}
-			      </tbody>
-	        </table>
+			       	<table className="table my-5 mx-auto w-50">
+				        <tbody>
+				          {this.state.album.songs.map( (song, index) =>
+					          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
+				            <td className="song-number"> {this.handleHoverButton(song, index)} </td>
+				            <td className="song-title"> {song.title} </td>
+				            <td className="song-duration"> {this.formatTime(song.duration)} </td>
+				            </tr>
+				          )}
+					      </tbody>
+			        </table>
+						</div>
+					</div>
 				</section>
 
-				<div className="player-bar">
+				<div className="mt-5">
 		      <PlayerBar
 		      	isPlaying={this.state.isPlaying}
 		      	currentSong={this.state.currentSong}
