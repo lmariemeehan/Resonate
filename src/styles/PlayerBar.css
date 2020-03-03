@@ -1,16 +1,6 @@
-.player-bar {
-	background-color: #371c5b;
-}
 
 #mini-album {
 	font-family: 'Fjalla One', sans-serif;
-}
-
-#player-album-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 #play-time {
@@ -122,5 +112,5 @@ input[type=range]:focus::-ms-fill-upper {
 	display: flex;
 	color: hsla(0, 0%, 100%, 0.6);
 	font-family: 'Fjalla One', sans-serif;
-	width: 320px;
+	width: 280px;
 }
