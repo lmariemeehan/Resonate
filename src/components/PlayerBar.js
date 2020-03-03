@@ -4,15 +4,16 @@ import '../styles/PlayerBar.css';
 class PlayerBar extends Component {
 	render () {
 		return (
-			<div className="">
+			<div className="mx-auto">
 
-					<section className="text-white" id="mini-album">
-						<img src={this.props.album.albumCover} width="60" height="60" className="float-left"/>
-							<div id="player-album-info">
-								<p className="ml-3 mb-0">{this.props.album.artist}</p>
-								<p className="ml-3">{this.props.currentSong.title}</p>
+					<section className="media text-white" id="mini-album">
+						<img src={this.props.album.albumCover} width="60" height="60" alt="mini album cover"/>
+							<div className="media-body">
+								<p className="mb-0">{this.props.album.artist}</p>
+								<p>{this.props.currentSong.title}</p>
 							</div>
 					</section>
+
 
 					<section className="" id="play-time">
 						<div id="buttons">
@@ -29,9 +30,10 @@ class PlayerBar extends Component {
 								<ion-icon name="play-forward-outline"></ion-icon>
 							</button>
 						</div>
-
 						<div id="time-control">
-							<div className="current-time">{this.props.formatTime( this.props.currentTime )}</div>
+							<div className="current-time">
+								{this.props.formatTime( this.props.currentTime )}
+							</div>
 							<input
 								type="range"
 								className="seek-bar"
@@ -41,9 +43,12 @@ class PlayerBar extends Component {
 								step="0.01"
 								onChange={this.props.handleTimeChange}
 							/>
-							<div className="total-time">{this.props.formatTime(this.props.duration)}</div>
+							<div className="total-time">
+								{this.props.formatTime(this.props.duration)}
+							</div>
 						</div>
 					</section>
+
 
 					<section className="" id="volume-control">
 						<span className="icon ion-volume-high"></span>

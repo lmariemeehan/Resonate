@@ -165,7 +165,7 @@ class Album extends Component {
 						</div>
 					</section>
 
-				<section className="row fixed-bottom player-bar py-4" style={{backgroundColor: "#371c5b"}}>
+				<section className="row fixed-bottom py-4" style={{backgroundColor: "#371c5b"}}>
 		      <PlayerBar
 		      	isPlaying={this.state.isPlaying}
 		      	currentSong={this.state.currentSong}

@@ -33,10 +33,9 @@ import '../styles/Library.css';
         </div>
 
         <nav className="navbar fixed-bottom navbar-custom">
-          <a className="portfolio-site" href="https://www.lmariemeehan.com" target="_blank">Laura Meehan</a>
+          <a className="portfolio-site" href="https://www.lmariemeehan.com" target="_blank" rel="noopener noreferrer">Laura Meehan</a>
           <div className="github-site">
-          <span className="github-icon"><ion-icon className="logo-github"></ion-icon></span>
-            <a className="github" href="https://github.com/lmariemeehan" target="_blank">GitHub</a>
+            <a className="github" href="https://github.com/lmariemeehan" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </nav>
 
