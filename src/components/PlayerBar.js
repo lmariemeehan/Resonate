@@ -57,8 +57,8 @@ class PlayerBar extends Component {
 
 					<section className="" id="volume-control">
 						<form className="form-row">
-							<div className="col-3">
-								<span className="icon ion-volume-high"></span>
+							<div className="col-3 pt-1">
+								<ion-icon name="volume-high-sharp"></ion-icon>
 							</div>
 							<div className="col">
 								<input
