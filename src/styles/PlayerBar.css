@@ -3,7 +3,7 @@
 	font-family: 'Fjalla One', sans-serif;
 }
 
-#play-time {
+.play-time {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -21,7 +21,7 @@
 	outline: 0;
 	background: transparent;
 	color: hsla(0, 0%, 100%, 0.6);
-	margin: 0 5px;
+	margin: 0 1rem;
 }
 
 #buttons #play-pause {
@@ -30,15 +30,14 @@
 }
 
 #buttons button:hover, #buttons #play-pause:hover {
-	color: #fff;
+	color: white;
 }
 
 input[type=range] {
 	height: 6px;
   -webkit-appearance: none;
-  margin: 2px 15px;
+  margin: 2px;
   width: 100%;
-	border-radius: 6px;
 }
 
 input[type=range]:focus {
@@ -67,6 +66,7 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -3px;
 }
+
 input[type=range]::-ms-track {
   width: 80%;
   height: 12px;
@@ -83,6 +83,7 @@ input[type=range]::-ms-fill-lower {
   border-radius: 6px;
   box-shadow: 1px 1px 1px #9D9EAF;
 }
+
 input[type=range]::-ms-fill-upper {
   background: #9D9EAF;
   border: 0px solid #000000;
@@ -104,13 +105,12 @@ input[type=range]::-ms-thumb {
 input[type=range]:focus::-ms-fill-lower {
   background: #9D9EAF;
 }
+
 input[type=range]:focus::-ms-fill-upper {
   background: #9D9EAF;
 }
 
 #time-control, #volume-control {
-	display: flex;
 	color: hsla(0, 0%, 100%, 0.6);
 	font-family: 'Fjalla One', sans-serif;
-	width: 280px;
 }

@@ -16,7 +16,7 @@ class PlayerBar extends Component {
 					</section>
 
 
-					<section className="" id="play-time">
+					<section className="play-time">
 						<div id="buttons">
 							<button id="previous" onClick={this.props.handlePrevClick}>
 								<ion-icon name="play-back-outline"></ion-icon>
@@ -31,37 +31,47 @@ class PlayerBar extends Component {
 								<ion-icon name="play-forward-outline"></ion-icon>
 							</button>
 						</div>
-						<div id="time-control">
-							<div className="current-time">
-								{this.props.formatTime( this.props.currentTime )}
+						<form id="time-control">
+							<div className="form-row current-time">
+								<div className="col-3">
+									{this.props.formatTime( this.props.currentTime )}
+								</div>
+								<div className="col">
+									<input
+										type="range"
+										className="seek-bar"
+										value= {(this.props.currentTime / this.props.duration) || 0}
+										max="1"
+										min="0"
+										step="0.01"
+										onChange={this.props.handleTimeChange}
+									/>
+								</div>
+								<div className="col-3 total-time">
+									{this.props.formatTime(this.props.duration)}
+								</div>
 							</div>
-							<input
-								type="range"
-								className="seek-bar"
-								value= {(this.props.currentTime / this.props.duration) || 0}
-								max="1"
-								min="0"
-								step="0.01"
-								onChange={this.props.handleTimeChange}
-							/>
-							<div className="total-time">
-								{this.props.formatTime(this.props.duration)}
-							</div>
-						</div>
+						</form>
 					</section>
 
 
 					<section className="" id="volume-control">
-						<span className="icon ion-volume-high"></span>
-							<input
-								   type="range"
-								   className="seek-bar"
-								   volume= {this.props.volume}
-								   max="1"
-								   min="0"
-								   step="0.01"
-								   onChange={this.props.handleVolumeChange}
-							/>
+						<form className="form-row">
+							<div className="col-3">
+								<span className="icon ion-volume-high"></span>
+							</div>
+							<div className="col">
+								<input
+									   type="range"
+									   className="seek-bar"
+									   volume= {this.props.volume}
+									   max="1"
+									   min="0"
+									   step="0.01"
+									   onChange={this.props.handleVolumeChange}
+								/>
+							</div>
+						</form>
 					</section>
 
 			</div>
