@@ -12,7 +12,7 @@ const Landing = () => (
 
     <div className="container-fluid pb-4">
       <div className="selling-points">
-      <div className="row py-5">
+      <div className="row py-5 mx-5">
         <div className="col text-center">
           <h3 className="text-white my-4">Choose your music</h3>
           <img src="/assets/images/landing_page/vinyl-records-945396_1920.jpg" className="img-fluid my-3" alt="Girl looking through vinyl music" />
