@@ -141,29 +141,29 @@ class Album extends Component {
      return (
 			<div className="container-fluid album-page">
 
-				<section className="row py-5">
-						<div className="col content text-white">
-							<div className="album-info text-center">
-							  <img src={this.state.album.albumCover} alt={this.state.album.title} height="280" width="320"className="rounded"/>
-				        <h1 className="mt-2" id="album-title">{this.state.album.title}</h1>
-				        <h2 id="artist">{this.state.album.artist}</h2>
-				        <div id="release-info">{this.state.album.releaseInfo}</div>
-				      </div>
-							<div className="table-responsive-sm">
-				       	<table className="table my-5 mx-auto w-50">
-					        <tbody>
-					          {this.state.album.songs.map( (song, index) =>
-						          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
-					            <th scope="row" className="song-number"> {this.handleHoverButton(song, index)} </th>
-					            <td className="song-title"> {song.title} </td>
-					            <td className="song-duration"> {this.formatTime(song.duration)} </td>
-					            </tr>
-					          )}
-						      </tbody>
-				        </table>
-							</div>
+				<section className="row pt-1 mb-5">
+					<div className="col content text-white">
+						<div className="album-info text-center">
+						  <img src={this.state.album.albumCover} alt={this.state.album.title} height="280" width="320" className="rounded"/>
+			        <h1 className="mt-2" id="album-title">{this.state.album.title}</h1>
+			        <h2 id="artist">{this.state.album.artist}</h2>
+			        <div id="release-info">{this.state.album.releaseInfo}</div>
+			      </div>
+						<div className="table-responsive-sm">
+			       	<table className="table my-5 mx-auto w-50">
+				        <tbody>
+				          {this.state.album.songs.map( (song, index) =>
+					          <tr className="song" key={index} onClick= {() => this.handleSongClick(song)} onMouseEnter= {() => this.onMouseEnter(index)} onMouseLeave= {() => this.onMouseLeave()}>
+				            <th scope="row" className="song-number"> {this.handleHoverButton(song, index)} </th>
+				            <td className="song-title"> {song.title} </td>
+				            <td className="song-duration"> {this.formatTime(song.duration)} </td>
+				            </tr>
+				          )}
+					      </tbody>
+			        </table>
 						</div>
-					</section>
+					</div>
+				</section>
 
 				<nav className="navbar fixed-bottom mt-5" style={{backgroundColor: "#371c5b"}}>
 		      <PlayerBar
