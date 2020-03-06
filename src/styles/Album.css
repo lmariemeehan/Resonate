@@ -3,7 +3,14 @@
 .album-page {
   background-color: #e056fd;
   background-image: linear-gradient(350deg, #6433A6 0%, #000000 74%);
-  overflow-y: scroll;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.navbar.fixed-bottom {
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .album-info img{
@@ -48,6 +55,7 @@
   color: #FCFBFB;
   font-size: 1rem;
 	font-family: 'Fjalla One', sans-serif;
+  overflow-y: scroll;
 }
 
 .table th {

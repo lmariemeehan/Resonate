@@ -164,8 +164,8 @@ class Album extends Component {
 						</div>
 					</div>
 				</section>
-
-				<nav className="navbar fixed-bottom mt-5" style={{backgroundColor: "#371c5b"}}>
+				<div style={{height: "6rem"}}></div>
+				<nav className="navbar fixed-bottom mt-0" style={{backgroundColor: "#371c5b"}}>
 		      <PlayerBar
 		      	isPlaying={this.state.isPlaying}
 		      	currentSong={this.state.currentSong}
