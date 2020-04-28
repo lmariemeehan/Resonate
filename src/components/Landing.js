@@ -36,7 +36,7 @@ const Landing = () => (
     </div>
 
     <nav className="navbar fixed-bottom navbar-custom mt-5">
-      <a className="portfolio-site" href="https://www.lmariemeehan.com" rel="noopener noreferrer" target="_blank">Laura Meehan</a>
+      <a className="portfolio-site" href="https://laurameehan.netlify.app/" rel="noopener noreferrer" target="_blank">Laura Meehan</a>
       <div className="github-site">
         <a className="github" href="https://github.com/lmariemeehan" rel="noopener noreferrer" target="_blank">GitHub</a>
       </div>
