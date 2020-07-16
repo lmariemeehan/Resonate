@@ -119,7 +119,7 @@ export default [{
   title: 'Horse Herd',
   artist: 'Bhakti2',
   releaseInfo: '2014 Nature Records',
-  albumCover: '/assets/images/album_covers/horses.jpg',
+  albumCover: '/assets/images/album_covers/horses-min.jpg',
   slug: 'horse-herd',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
