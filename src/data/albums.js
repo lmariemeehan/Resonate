@@ -15,7 +15,7 @@ export default [{
   title: 'Tree At Sunset',
   artist: 'Bessi',
   releaseInfo: '2012 Travel Records',
-  albumCover: '/assets/images/album_covers/treeAtSunset.jpg',
+  albumCover: '/assets/images/album_covers/treeAtSunset-min.jpg',
   slug: 'tree-at-sunset',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
