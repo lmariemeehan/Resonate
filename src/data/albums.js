@@ -54,7 +54,7 @@ export default [{
   title: 'Shipwreck Adventure',
   artist: 'Comfreak',
   releaseInfo: '2016 Emotion Records',
-  albumCover: '/assets/images/album_covers/shipwreck.jpg',
+  albumCover: '/assets/images/album_covers/shipwreck-min.jpg',
   slug: 'shipwreck-adventure',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
