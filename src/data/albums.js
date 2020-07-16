@@ -80,7 +80,7 @@ export default [{
   title: 'The Cannonball',
   artist: 'Guy',
   releaseInfo: '2012 Swim Records',
-  albumCover: '/assets/images/album_covers/03.jpg',
+  albumCover: '/assets/images/album_covers/03-min.jpg',
   slug: 'the-cannonball',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
