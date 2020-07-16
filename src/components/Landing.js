@@ -27,7 +27,7 @@ const Landing = () => (
           </div>
         <div className="col text-center">
           <h3 className="text-white my-4">Mobile enabled</h3>
-          <img src="/assets/images/landing_page/mobile_adults.jpg" className="img-fluid my-3" alt="Using the phone on the go" />
+          <img src="/assets/images/landing_page/mobile_adults-min.jpg" className="img-fluid my-3" alt="Using the phone on the go" />
           <p className="point-description mt-2 mb-3">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
           <span className="phone-icon mb-3"><ion-icon name="phone-portrait-sharp"></ion-icon></span>
         </div>
