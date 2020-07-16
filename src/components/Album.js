@@ -105,7 +105,7 @@ class Album extends Component {
 
    const minutes = Math.floor(sec / 60);
    const seconds = Math.floor(sec -  (minutes * 60));
-   if (seconds < 10) {return minutes + " : " + "0" + seconds;}
+   if (seconds < 10) {return minutes + " : 0" + seconds}
    return minutes + ":" + seconds;
   }
 
