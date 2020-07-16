@@ -2,7 +2,7 @@ export default [{
   title: 'The Colors',
   artist: 'Pablo Picasso',
   releaseInfo: '1909 Spanish Records',
-  albumCover: '/assets/images/album_covers/01.jpg',
+  albumCover: '/assets/images/album_covers/01-min.jpg',
   slug: 'the-colors',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
