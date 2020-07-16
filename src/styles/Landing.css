@@ -4,7 +4,7 @@ html {
 }
 
 .hero-image {
-	background-image: url('https://res.cloudinary.com/laurameehan/image/upload/v1594933524/samuele-car-min_eenwpr.jpg');
+	background-image: url('/assets/images/landing_page/samuele-car-min.jpg');
   background-color: #000;
   height: 500px;
   background-position: center;
