@@ -67,7 +67,7 @@ export default [{
   title: 'Wise Owl',
   artist: 'Lepale',
   releaseInfo: '2016 Bird Records',
-  albumCover: '/assets/images/album_covers/owl.jpg',
+  albumCover: '/assets/images/album_covers/owl-min.jpg',
   slug: 'wise-owl',
   songs: [
     { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
@@ -93,7 +93,7 @@ export default [{
   title: 'Holding Hands',
   artist: 'StockSnap',
   releaseInfo: '2017 Man Woman Records',
-  albumCover: '/assets/images/album_covers/people.jpg',
+  albumCover: '/assets/images/album_covers/people-min.jpg',
   slug: 'holding-hands',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
