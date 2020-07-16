@@ -49,9 +49,6 @@ html {
 
 /*   Selling-points section   */
 .img-fluid {
-	height: auto;
-  width: 300px;
-  max-width: 100%;
   -webkit-filter: opacity(.9); /* Safari 6.0 - 9.0 */
     filter: opacity(.9);
   border-radius: 6px;
@@ -72,7 +69,7 @@ html {
 }
 
 /*    Icons    */
-.selling-points .col ion-icon {
+.selling-points .col-lg-3 ion-icon {
 	height: 75px;
 	width: 225px;
 	padding: 10px 0;
