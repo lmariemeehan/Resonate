@@ -41,7 +41,7 @@ export default [{
   title: 'The Telephone',
   artist: 'Guglielmo Marconi',
   releaseInfo: '1909 EM Records',
-  albumCover: '/assets/images/album_covers/02.jpg',
+  albumCover: '/assets/images/album_covers/02-min.jpg',
   slug: 'the-telephone',
   songs: [
     { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
