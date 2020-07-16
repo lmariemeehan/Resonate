@@ -132,7 +132,7 @@ export default [{
   title: 'Favorite Spot',
   artist: 'enriquelopezgarre',
   releaseInfo: '2019 Gateway Records',
-  albumCover: '/assets/images/album_covers/landscape-4205108_640.jpg',
+  albumCover: '/assets/images/album_covers/landscape-min.jpg',
   slug: 'favorite-spot',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
