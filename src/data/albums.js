@@ -28,7 +28,7 @@ export default [{
   title: 'Night',
   artist: 'Skeeze',
   releaseInfo: '2013 Delicate Arch Records',
-  albumCover: '/assets/images/album_covers/night.jpg',
+  albumCover: '/assets/images/album_covers/night-min.jpg',
   slug: 'night',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
