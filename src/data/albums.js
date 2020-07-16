@@ -145,7 +145,7 @@ export default [{
   title: 'Thunderstorm',
   artist: 'O12',
   releaseInfo: '2018 Flash Records',
-  albumCover: '/assets/images/album_covers/thunderstorm.jpg',
+  albumCover: '/assets/images/album_covers/thunderstorm-min.jpg',
   slug: 'thunderstorm',
   songs: [
       { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
