@@ -168,19 +168,19 @@ class Album extends Component {
 				<div style={{height: "6rem"}}></div>
 
 				<nav className="navbar fixed-bottom mt-0" style={{backgroundColor: "#371c5b"}}>
-		      <PlayerBar
-		      	isPlaying={this.state.isPlaying}
-		      	currentSong={this.state.currentSong}
-		      	currentTime={this.audioElement.currentTime}
-		        formatTime={this.formatTime}
-		      	duration={this.audioElement.duration}
-						album={this.state.album}
-		        volume={this.audioElement.volume}
-		      	handleSongClick={() => this.handleSongClick(this.state.currentSong)}
-		      	handlePrevClick={() => this.handlePrevClick()}
-		      	handleNextClick={() => this.handleNextClick()}
-		      	handleTimeChange={(e) => this.handleTimeChange(e)}
-		        handleVolumeChange={(e) => this.handleVolumeChange(e)}
+		      	<PlayerBar
+					isPlaying={this.state.isPlaying}
+					currentSong={this.state.currentSong}
+					currentTime={this.audioElement.currentTime}
+					formatTime={this.formatTime}
+					duration={this.audioElement.duration}
+							album={this.state.album}
+					volume={this.audioElement.volume}
+					handleSongClick={() => this.handleSongClick(this.state.currentSong)}
+					handlePrevClick={() => this.handlePrevClick()}
+					handleNextClick={() => this.handleNextClick()}
+					handleTimeChange={(e) => this.handleTimeChange(e)}
+					handleVolumeChange={(e) => this.handleVolumeChange(e)}
 		      	/>
 				</nav>
 

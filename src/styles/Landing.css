@@ -6,7 +6,7 @@ html {
 .hero-image {
 	background-image: url('/assets/images/landing_page/samuele-car-min.jpg');
   background-color: #000;
-  height: 500px;
+  height: 32rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +48,10 @@ html {
 }
 
 /*   Selling-points section   */
-.img-fluid {
+.selling-points img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   -webkit-filter: opacity(.9); /* Safari 6.0 - 9.0 */
     filter: opacity(.9);
   border-radius: 6px;
@@ -61,7 +64,6 @@ html {
 .container-fluid {
 	background-color: #393A4A;
 }
-
 
 .point-description {
   color: #FCFBFB;

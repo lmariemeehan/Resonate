@@ -15,19 +15,19 @@ const Landing = () => (
       <div className="row d-flex justify-content-center py-5">
         <div className="col-lg-3 text-center">
           <h3 className="text-white my-4">Choose your music</h3>
-          <img className="img-fluid my-3" src="/assets/images/landing_page/vinyl-records-min.jpg"  alt="Girl looking through vinyl music" />
+          <img className="my-3" src="/assets/images/landing_page/vinyl-records-min.jpg"  alt="Girl looking through vinyl music" />
           <p className="point-description mt-2 mb-3">The world is full of music. Why should you have to listen to music that someone else chose?</p>
           <span className="music-note mb-3"><ion-icon name="musical-notes-sharp"></ion-icon></span>
         </div>
-        <div className="col-lg-3 mx-3 text-center">
+        <div className="col-lg-3 text-center">
           <h3 className="text-white my-4">Unlimited, streaming, ad-free</h3>
-          <img src="/assets/images/landing_page/bodybuilder-min.jpg" className="img-fluid my-3" alt="Man going for a run and listening to music with headphones" />
+          <img className="my-3" src="/assets/images/landing_page/bodybuilder-min.jpg" alt="Man going for a run and listening to music with headphones" />
           <p className="point-description mt-2 mb-3">No arbitrary limits. No distractions.</p>
           <span className="streaming-icon mb-3"><ion-icon name="radio-sharp"></ion-icon></span>
           </div>
         <div className="col-lg-3 text-center">
           <h3 className="text-white my-4">Mobile enabled</h3>
-          <img src="/assets/images/landing_page/mobile_adults-min.jpg" className="img-fluid my-3" alt="Using the phone on the go" />
+          <img className="my-3" src="/assets/images/landing_page/mobile_adults-min.jpg" alt="Using the phone on the go" />
           <p className="point-description mt-2 mb-3">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
           <span className="phone-icon mb-3"><ion-icon name="phone-portrait-sharp"></ion-icon></span>
         </div>
