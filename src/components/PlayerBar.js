@@ -38,7 +38,7 @@ class PlayerBar extends Component {
 								{this.props.formatTime( this.props.currentTime )}
 							</div>
 							<div className="col">
-								<label for="seek-bar"></label>
+								<label htmlFor="seek-bar"></label>
 								<input
 									type="range"
 									name="seek-bar"
