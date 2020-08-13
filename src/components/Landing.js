@@ -21,7 +21,7 @@ const Landing = () => (
         </div>
         <div className="col-lg-3 text-center">
           <h3 className="text-white my-4">Unlimited, streaming, ad-free</h3>
-          <img className="my-3" src="/assets/images/landing_page/bodybuilder-min.jpg" alt="Man going for a run and listening to music with headphones" />
+          <img className="my-3" src="/assets/images/landing_page/bodybuilder-minload.jpg" alt="Man going for a run and listening to music with headphones" />
           <p className="point-description mt-2 mb-3">No arbitrary limits. No distractions.</p>
           <span className="streaming-icon mb-3"><ion-icon name="radio-sharp"></ion-icon></span>
           </div>
