@@ -5,7 +5,7 @@ const Landing = () => (
   <section className="landing">
 
     <div className="hero-image">
-      <h1 className="hero-title"><a href="/library">Turn the music up!</a></h1>
+      <h1 className="hero-title d-flex justify-content-center align-items-center mt-3"><a href="/library">Turn the music up!</a></h1>
     </div>
 
     <h2 className="app-name">Resonate</h2>
@@ -15,19 +15,19 @@ const Landing = () => (
       <div className="row d-flex justify-content-center py-5">
         <div className="col-lg-3 text-center">
           <h3 className="text-white my-4">Choose your music</h3>
-          <img className="my-3" src="/assets/images/landing_page/vinyl-records-minload.jpg"  alt="Girl looking through vinyl music" />
+          <img className="my-3 img-fluid" src="/assets/images/landing_page/vinyl-records-minload.jpg"  alt="Girl looking through vinyl music" />
           <p className="point-description mt-2 mb-3">The world is full of music. Why should you have to listen to music that someone else chose?</p>
           <span className="music-note mb-3"><ion-icon name="musical-notes-sharp"></ion-icon></span>
         </div>
         <div className="col-lg-3 text-center">
           <h3 className="text-white my-4">Unlimited, streaming, ad-free</h3>
-          <img className="my-3" src="/assets/images/landing_page/bodybuilder-minload.jpg" alt="Man going for a run and listening to music with headphones" />
+          <img className="my-3 img-fluid" src="/assets/images/landing_page/bodybuilder-minload.jpg" alt="Man going for a run and listening to music with headphones" />
           <p className="point-description mt-2 mb-3">No arbitrary limits. No distractions.</p>
           <span className="streaming-icon mb-3"><ion-icon name="radio-sharp"></ion-icon></span>
           </div>
         <div className="col-lg-3 text-center">
           <h3 className="text-white my-4">Mobile enabled</h3>
-          <img className="my-3" src="/assets/images/landing_page/backpack-minload.jpg" alt="Using the phone on the go" />
+          <img className="my-3 img-fluid" src="/assets/images/landing_page/photography-mobile.jpg" alt="Using the phone on the go" />
           <p className="point-description mt-2 mb-3">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
           <span className="phone-icon mb-3"><ion-icon name="phone-portrait-sharp"></ion-icon></span>
         </div>
