@@ -15,7 +15,7 @@ const Landing = () => (
       <div className="row d-flex justify-content-center py-5">
         <div className="col-lg-3 text-center">
           <h3 className="text-white my-4">Choose your music</h3>
-          <img className="my-3" src="/assets/images/landing_page/vinyl-records-min.jpg"  alt="Girl looking through vinyl music" />
+          <img className="my-3" src="/assets/images/landing_page/vinyl-records-minload.jpg"  alt="Girl looking through vinyl music" />
           <p className="point-description mt-2 mb-3">The world is full of music. Why should you have to listen to music that someone else chose?</p>
           <span className="music-note mb-3"><ion-icon name="musical-notes-sharp"></ion-icon></span>
         </div>
